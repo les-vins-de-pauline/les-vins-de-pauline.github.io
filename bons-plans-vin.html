@@ -8,6 +8,7 @@
     <meta content='' name='author' />
     <link href='favicon.ico' rel='shortcut icon' />
     <link href='css/bootstrap.min.css' rel='stylesheet' />
+    <link href='css/perfect-scrollbar-0.4.8.min.css' rel='stylesheet' />
     <link href='css/les-vins-de-pauline.css' rel='stylesheet' />
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -17,37 +18,46 @@
   </head>
   <body>
     <header class='container lvdp-header'>
-      <img alt='Les Vins de Pauline - Œnologie, pédagogie et bonnes bouteilles&amp;nbsp;!' class='lvdp-tagline' src='img/tagline.png' />
-      <img class='hidden-xs hidden-sm pull-right' src='img/header-background.jpg' />
-    </header>
-    <nav class='container lvdp-nav' role='navigation'>
-      <div class='row'>
-        <div class='col-xs-1 hidden-xs lvdp-logo'>
-          <a href='pauline.html'>
-            <img class='lvdp-logo-offset' src='img/logo.png' />
-          </a>
-          &nbsp;
-        </div>
-        <div class='col-sm-1 hidden-xs lvdp-nav-item'>
-          &nbsp;
-        </div>
-        <div class='col-sm-2 lvdp-nav-item'>
-          <a href='ateliers.html'>Ateliers</a>
-        </div>
-        <div class='col-sm-2 lvdp-nav-item lvdp-nav-active'>
-          <a href='ventes.html'>Ventes</a>
-        </div>
-        <div class='col-sm-2 lvdp-nav-item'>
-          <a href='formations.html'>Formations</a>
-        </div>
-        <div class='col-sm-2 lvdp-nav-item'>
-          <a href='animations.html'>Animations</a>
-        </div>
-        <div class='col-sm-2 lvdp-nav-item'>
-          <a href='http://blog.lesvinsdepauline.fr' target='_blank'>Blog</a>
-        </div>
+      <div class='lvdp-tagline'>
+        <a href='/'>
+          <img alt='Les Vins de Pauline - Œnologie, pédagogie et bonnes bouteilles&amp;nbsp;!' class='lvdp-tagline-back' src='img/header-background.jpg' />
+          <img alt='Les Vins de Pauline - Œnologie, pédagogie et bonnes bouteilles&amp;nbsp;!' class='lvdp-tagline-front' src='img/tagline.png' />
+        </a>
       </div>
-    </nav>
+      <nav class='container lvdp-nav' role='navigation'>
+        <div class='row'>
+          <div class='col-xs-1 hidden-xs lvdp-logo'>
+            <a href='pauline.html'>
+              <img class='lvdp-logo-offset' src='img/logo.png' />
+            </a>
+            &nbsp;
+          </div>
+          <div class='col-sm-1 hidden-xs lvdp-nav-item'>
+            &nbsp;
+          </div>
+          <div class='col-sm-2 lvdp-nav-item'>
+            <a class='lvdp-fill-div' href='formations.html'></a>
+            <a href='formations.html'>Formations</a>
+          </div>
+          <div class='col-sm-2 lvdp-nav-item'>
+            <a class='lvdp-fill-div' href='animations.html'></a>
+            <a href='animations.html'>Animations</a>
+          </div>
+          <div class='col-sm-2 lvdp-nav-item'>
+            <a class='lvdp-fill-div' href='ateliers.html'></a>
+            <a href='ateliers.html'>Ateliers</a>
+          </div>
+          <div class='col-sm-2 lvdp-nav-item lvdp-nav-active'>
+            <a class='lvdp-fill-div' href='ventes.html'></a>
+            <a href='ventes.html'>Ventes</a>
+          </div>
+          <div class='col-sm-2 lvdp-nav-item'>
+            <a class='lvdp-fill-div' href='http://blog.lesvinsdepauline.fr' target='_blank'></a>
+            <a href='http://blog.lesvinsdepauline.fr' target='_blank'>Blog</a>
+          </div>
+        </div>
+      </nav>
+    </header>
     <div class='container lvdp-main-ventes'>
       <div class='row lvdp-vspace'></div>
       <div class='row'>
@@ -55,14 +65,15 @@
           <div class='row'>
             <div class='lvdp-tab pull-right'>
               <a class='lvdp-fill-div' href='vente-vin-domicile.html'></a>
-              Organiser une vente
+              <a href='vente-vin-domicile.html'>
+                Organiser une vente
+              </a>
             </div>
             <div class='lvdp-tab pull-right'>
               <a class='lvdp-fill-div' href='vente-privee-vin.html'></a>
-              Calendrier
-            </div>
-            <div class='lvdp-tab lvdp-tab-active pull-right'>
-              Nos ventes privées
+              <a href='vente-privee-vin.html'>
+                Calendrier
+              </a>
             </div>
           </div>
           <div class='row lvdp-content' role='main'>
@@ -70,10 +81,10 @@
               <h1>Nos ventes privées</h1>
               <p>Nous vous invitons à découvrir nos «&nbsp;bons plans&nbsp;» producteurs&nbsp;! Voyageant toute l'année au sein des vignobles, Pauline ramène de bonnes bouteilles dans ses valises et vous propose des événements ponctuels, des magasins éphémères, où vous pourrez déguster toute la gamme des vins de Pauline en exclusivité&nbsp;!</p>
               <img class='pull-right' src='img/page-icon-vente.png' />
-              <img class='hidden-xs lvdp-cross' src='img/cross.png' />
-              <img class='lvdp-ribbon' src='img/ribbon.png' />
             </div>
           </div>
+          <img class='hidden-xs lvdp-cross' src='img/cross.png' />
+          <img class='lvdp-ribbon' src='img/ribbon.png' />
         </div>
       </div>
       <div class='row lvdp-vspace'></div>
@@ -83,16 +94,16 @@
             <a href='http://www.facebook.com/les.vins.de.pauline' target='_blank'>
               <img src='img/icon-facebook.png' />
             </a>
-            <a href='mailto:pauline@lesvinsdepauline.fr'>
+            <a href='#contact'>
               <img src='img/icon-contact.png' />
             </a>
-            <a href='#TODO'>
+            <a href='#credits'>
               <img src='img/icon-like.png' />
             </a>
-            <a href='#TODO'>
+            <a href='#legal'>
               <img src='img/icon-legal.png' />
             </a>
-            <a href='#TODO'>
+            <a href='#sitemap'>
               <img src='img/icon-sitemap.png' />
             </a>
           </aside>
@@ -101,7 +112,151 @@
     </div>
     <footer class='container lvdp-footer'>
       <div class='row'>
-        <p>L’ABUS D’ALCOOL EST DANGEREUX, À CONSOMMER AVEC MODÉRATION.</p>
+        <div class='col-sm-12'>
+          <p class='lvdp-abus'>L’ABUS D’ALCOOL EST DANGEREUX, À CONSOMMER AVEC MODÉRATION.</p>
+        </div>
+      </div>
+      <div class='lvdp-footer-divider'></div>
+      <div class='row'>
+        <div class='col-sm-4'>
+          <a name='contact'>
+            <img class='lvdp-footer-icon' src='img/icon-contact-inv.png' />
+          </a>
+          <div class='lvdp-footer-text'>
+            <h2>Les Vins de Pauline</h2>
+            <p>
+              9 bis, rue Bergot 59000&nbsp;Lille
+              <a href='mailto:pauline@lesvinsdepauline.fr'>
+                pauline@lesvinsdepauline.fr
+              </a>
+            </p>
+          </div>
+        </div>
+        <div class='col-sm-8'>
+          <a name='credits'>
+            <img class='lvdp-footer-icon' src='img/icon-like-inv.png' />
+          </a>
+          <div class='lvdp-footer-text'>
+            <h2>Merci !</h2>
+            <p>consentium aribusciunti sum quos sunt enda prerfer natestrument eume qui a possitas eos eatur autem et ut quatque pro et lab inus.</p>
+            <p>At et fuga. Ut aspis qui cus unto volorep editatur aut maio ommolup icipsam.</p>
+          </div>
+        </div>
+      </div>
+      <div class='lvdp-footer-divider'></div>
+      <div class='row'>
+        <div class='col-sm-12'>
+          <a name='legal'>
+            <img class='lvdp-footer-icon' src='img/icon-legal-inv.png' />
+          </a>
+          <div class='lvdp-footer-text'>
+            <h2>Mentions légales</h2>
+            <p>Apit, ut iunt parchilis nectiatis eumquam quia essit doluptati tet quam non con rehenis doluptaquam, verum re mo quam, si dolut as reperupta ne ra vidicat ibusdaectur a si accuptate magnam, ut assimi, te intur? Sunt ommo videstota aspe es eture assimol uptatur alignimin con nimet mi, optiam sim nihilluptae peritas denditiae doluptatis dollace sendandandae soloriam qui consentium aribusciunti sum quos sunt enda prerfer natestrument eume qui a possitas eos eatur autem et ut quatque pro et lab inus.</p>
+            <p>At et fuga. Ut aspis qui cus unto volorep editatur aut maio ommolup icipsam.</p>
+            <p>Apit, ut iunt parchilis nectiatis eumquam quia essit doluptati tet quam non con rehenis doluptaquam, verum re mo quam, si dolut as reperupta ne ra vidicat ibusdaectur a si accuptate magnam, ut assimi, te intur? Sunt ommo videstota aspe es eture assimol uptatur alignimin con nimet mi, optiam sim nihilluptae peritas denditiae doluptatis dollace At et sendandandae soloriam qui.</p>
+          </div>
+        </div>
+      </div>
+      <div class='lvdp-footer-divider'></div>
+      <div class='row'>
+        <div class='col-sm-12'>
+          <a name='sitemap'>
+            <img class='lvdp-footer-icon' src='img/icon-legal-inv.png' />
+          </a>
+          <div class='lvdp-footer-text'>
+            <h2>Plan du site</h2>
+            <ul>
+              <li>
+                <a href='formations.html'>
+                  Formations
+                </a>
+                <ul>
+                  <li>
+                    <a href='formation-oenologie-chr.html'>
+                      Pour le C.H.R.
+                    </a>
+                  </li>
+                  <li>
+                    <a href='formation-oenologie-cadres.html'>
+                      Pour les cadres d'entreprise
+                    </a>
+                  </li>
+                  <li>
+                    <a href='formation-oenologie-references.html'>
+                      Merci !
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href='animations.html'>
+                  Animations
+                </a>
+                <ul>
+                  <li>
+                    <a href='animation-oenologie-entreprise.html'>
+                      Une Philosophie
+                    </a>
+                  </li>
+                  <li>
+                    <a href='evenement-degustation-vin-entreprise.html'>
+                      Des organisations
+                    </a>
+                  </li>
+                  <li>
+                    <a href='evenement-entreprise-references.html'>
+                      Merci !
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href='ateliers.html'>
+                  Ateliers
+                </a>
+                <ul>
+                  <li>
+                    <a href='ateliers-degustation-vin.html'>
+                      Une philosophie
+                    </a>
+                  </li>
+                  <li>
+                    <a href='initiation-oenologie-lille.html'>
+                      Un calendrier
+                    </a>
+                  </li>
+                  <li>
+                    <a href='atelier-degustation-domicile.html'>
+                      Sur mesure
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href='ventes.html'>
+                  Ventes
+                </a>
+                <ul>
+                  <li>
+                    <a href='bons-plans-vin.html'>
+                      Nos ventes privées
+                    </a>
+                  </li>
+                  <li>
+                    <a href='vente-privee-vin.html'>
+                      Calendrier
+                    </a>
+                  </li>
+                  <li>
+                    <a href='vente-vin-domicile.html'>
+                      Organiser une vente
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </footer>
     <script src='https://code.jquery.com/jquery-1.10.2.min.js'></script>
@@ -113,6 +268,110 @@
       })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
       ga('create', 'UA-18492930-1', 'lesvinsdepauline.fr');
       ga('send', 'pageview');
+    </script>
+    <script src='js/perfect-scrollbar-0.4.8.with-mousewheel.min.js'></script>
+    <script type='text/javascript'>
+      //<![CDATA[
+        //TODO refactor
+        var tilesMargin = $(window).height()-207-100-$('.lvdp-tile-container').height()-100-38;
+        $('.lvdp-tile-container').css('margin-top', tilesMargin/2).css('margin-bottom', tilesMargin/2);
+        $(window).resize(function() {
+            var tilesMargin = $(window).height()-207-100-$('.lvdp-tile-container').height()-100-38;
+            $('.lvdp-tile-container').css('margin-top', tilesMargin/2).css('margin-bottom', tilesMargin/2);
+        });
+        
+        var contentHeight = $(window).height()-207-100-40-100-38;
+        contentHeight = Math.max(contentHeight, 300);
+        $('.lvdp-content').height(contentHeight).css('overflow', 'hidden').perfectScrollbar();
+        $(window).resize(function() {
+            var contentHeight = $(window).height()-207-100-40-100-38;
+            contentHeight = Math.max(contentHeight, 300);
+            $('.lvdp-content').height(contentHeight).perfectScrollbar('update');
+        });
+        
+        $('.lvdp-pratique-box-expanded')
+            .mouseenter(function() {
+                $('.lvdp-pratique-box-expanded').appendTo($('.lvdp-content').parent());
+                $('.lvdp-pratique-box-expanded').css("top",
+                    0
+                    +$('.lvdp-pratique').offset().top
+                    -$('.lvdp-content').parent().offset().top
+                    +25
+                    );
+                $('.lvdp-pratique-box-expanded').css("right",
+                    0
+                    +$('.lvdp-pratique').offset().left
+                    -$('.lvdp-content').parent().offset().left
+                    +76
+                    );
+            })
+            .mouseleave(function() {
+                $('.lvdp-pratique-box-expanded').appendTo($('.lvdp-pratique-box'));
+            });
+        $('.lvdp-pratique')
+            .mouseenter(function() {
+                $('.lvdp-pratique-box-expanded').appendTo($('.lvdp-content').parent());
+                $('.lvdp-pratique-box-expanded').css("top",
+                    0
+                    +$('.lvdp-pratique').offset().top
+                    -$('.lvdp-content').parent().offset().top
+                    +25
+                    );
+                $('.lvdp-pratique-box-expanded').css("right",
+                    0
+                    +$('.lvdp-pratique').offset().left
+                    -$('.lvdp-content').parent().offset().left
+                    +76
+                    );
+                $('.lvdp-pratique-box-expanded').css("display", "none");
+                $('.lvdp-pratique-box-expanded').fadeIn();
+            })
+            .mouseleave(function() {
+                $('.lvdp-pratique-box-expanded').appendTo($('.lvdp-pratique-box'));
+            });
+        var onPlus = 0;
+        $('.lvdp-plus')
+            .mouseenter(function() {
+                $('.lvdp-plus-box-expanded').appendTo($('.lvdp-content').parent());
+                $('.lvdp-plus-box-expanded').css("top",
+                    0
+                    +$('.lvdp-plus').offset().top
+                    -$('.lvdp-content').parent().offset().top
+                    +25
+                    );
+                $('.lvdp-plus-box-expanded').css("left",
+                    0
+                    +$('.lvdp-plus').offset().left
+                    -$('.lvdp-content').parent().offset().left
+                    +28
+                    );
+                $('.lvdp-plus-box-expanded').css("display", "none");
+                $('.lvdp-plus-box-expanded').fadeIn();
+            })
+            .mouseleave(function() {
+                $('.lvdp-plus-box-expanded').appendTo($('.lvdp-plus-box'));
+            });
+        $('.lvdp-plus-box-expanded')
+            .mouseenter(function() {
+                $('.lvdp-plus-box-expanded').appendTo($('.lvdp-content').parent());
+                $('.lvdp-plus-box-expanded').css("top",
+                    0
+                    +$('.lvdp-plus').offset().top
+                    -$('.lvdp-content').parent().offset().top
+                    +25
+                    );
+                $('.lvdp-plus-box-expanded').css("left",
+                    0
+                    +$('.lvdp-plus').offset().left
+                    -$('.lvdp-content').parent().offset().left
+                    +28
+                    );
+            })
+            .mouseleave(function() {
+                $('.lvdp-plus-box-expanded').appendTo($('.lvdp-plus-box'));
+            })
+            ;
+      //]]>
     </script>
   </body>
 </html>

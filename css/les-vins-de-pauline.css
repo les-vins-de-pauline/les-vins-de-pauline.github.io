@@ -1,17 +1,27 @@
 @font-face {
     font-family: ITCAvantGardeStd;
-    src: url(../fonts/ITCAvantGardeStd-Bk.otf);
+    src: url('../fonts/itcavantgardestd-bk-webfont.eot');
+    src: url('../fonts/itcavantgardestd-bk-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/itcavantgardestd-bk-webfont.woff') format('woff'),
+         url('../fonts/itcavantgardestd-bk-webfont.ttf') format('truetype'),
+         url('../fonts/itcavantgardestd-bk-webfont.svg#itc_avant_garde_gothic_stdBk') format('svg');
     font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
     font-family: ITCAvantGardeStd;
-    src: url(../fonts/ITCAvantGardeStd-Md.otf);
+    src: url('../fonts/itcavantgardestd-md-webfont.eot');
+    src: url('../fonts/itcavantgardestd-md-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/itcavantgardestd-md-webfont.woff') format('woff'),
+         url('../fonts/itcavantgardestd-md-webfont.ttf') format('truetype'),
+         url('../fonts/itcavantgardestd-md-webfont.svg#itc_avant_garde_gothic_stdMd') format('svg');
     font-weight: bold;
+    font-style: normal;
 }
 
 body {
-    background: url(../img/background.png) repeat 0 0;
+    background: url(../img/background.png) fixed repeat 0 0;
     font-family: ITCAvantGardeStd, Arial, sans-serif;
 }
 
@@ -27,22 +37,63 @@ a {
 .lvdp-header {
     background-color: white;
     padding:0;
+    position:fixed;
+    top:0;
+    left:0;
+    z-index: 100;
+    width:100%;
 }
 
-.lvdp-tagline {
-    padding-top: 12px;
-    padding-bottom: 12px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+@media screen and (min-width: 768px) {
+.lvdp-header {
+    left:50%;
+    margin:0 0 0 -375px;
+    width: 750px;
+}
 }
 
 @media screen and (min-width: 992px) {
-    .lvdp-tagline {
-        padding-left: 50px;
-        position: absolute;
-        margin: 0;
-    }
+.lvdp-header {
+    margin:0 0 0 -485px;
+    width: 970px;
+}
+}
+
+@media screen and (min-width: 1200px) {
+.lvdp-header {
+    margin:0 0 0 -585px;
+    width: 1170px;
+}
+}
+
+.lvdp-tagline {
+    position:relative;
+    height: 163px;
+    overflow: hidden;
+}
+
+.lvdp-tagline-front {
+    position:absolute;
+    top: 12px;
+    left: 50px;
+}
+
+.lvdp-tagline-back {
+    position:absolute;
+    top:0;
+    left:150px;
+}
+
+@media screen and (min-width: 992px) {
+.lvdp-tagline-back {
+    left:218px;
+}
+}
+
+@media screen and (min-width: 1200px) {
+.lvdp-tagline-back {
+    left:448px;
+}
 }
 
 
@@ -68,7 +119,7 @@ a {
 .lvdp-nav-item {
     padding: 12px;
     text-align: center;
-    //http://www.colorzilla.com/gradient-editor/#f3f3f3+0,ffffff+50,f3f3f3+100;Custom
+    /* http://www.colorzilla.com/gradient-editor/#f3f3f3+0,ffffff+50,f3f3f3+100;Custom */
     background: #f9f9f9; /* Old browsers */
     background: -moz-linear-gradient(top, #f3f3f3 0%, #ffffff 50%, #f3f3f3 100%); /* FF3.6+ */
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f3f3f3), color-stop(50%,#ffffff), color-stop(100%,#f3f3f3)); /* Chrome,Safari4+ */
@@ -80,16 +131,19 @@ a {
 }
 
 .lvdp-nav-active {
-    background: #e8e8e8; /* Old browsers */
-    background: -moz-radial-gradient(center, ellipse cover, #ffffff 0%, #e8e8e8 92%, #dddddd 100%); /* FF3.6+ */
-    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#ffffff), color-stop(92%,#e8e8e8), color-stop(100%,#dddddd)); /* Chrome,Safari4+ */
-    background: -webkit-radial-gradient(center, ellipse cover, #ffffff 0%,#e8e8e8 92%,#dddddd 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-radial-gradient(center, ellipse cover, #ffffff 0%,#e8e8e8 92%,#dddddd 100%); /* Opera 12+ */
-    background: -ms-radial-gradient(center, ellipse cover, #ffffff 0%,#e8e8e8 92%,#dddddd 100%); /* IE10+ */
-    background: radial-gradient(ellipse at center, #ffffff 0%,#e8e8e8 92%,#dddddd 100%); /* W3C */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#dddddd',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    background: #be0185; /* Old browsers */
+    background: -moz-linear-gradient(left, #8e0061 0%, #be0185 10%, #be0185 50%, #be0185 90%, #8e0061 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%,#8e0061), color-stop(10%,#be0185), color-stop(50%,#be0185), color-stop(90%,#be0185), color-stop(100%,#8e0061)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(left, #8e0061 0%,#be0185 10%,#be0185 50%,#be0185 90%,#8e0061 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(left, #8e0061 0%,#be0185 10%,#be0185 50%,#be0185 90%,#8e0061 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(left, #8e0061 0%,#be0185 10%,#be0185 50%,#be0185 90%,#8e0061 100%); /* IE10+ */
+    background: linear-gradient(to right, #8e0061 0%,#be0185 10%,#be0185 50%,#be0185 90%,#8e0061 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8e0061', endColorstr='#8e0061',GradientType=1 ); /* IE6-9 */
 }
 
+.lvdp-nav-active a {
+    color: white;
+}
 
 .lvdp-vspace-small {
     height: 30px;
@@ -103,30 +157,35 @@ a {
     background: url(../img/main-background-pauline.jpg) 0 0;
     background-size: 100% auto;
     background-size: cover;
+    margin-top: 207px;
 }
 
 .lvdp-main-formations {
     background: url(../img/main-background-formations.jpg) 0 0;
     background-size: 100% auto;
     background-size: cover;
+    margin-top: 207px;
 }
 
 .lvdp-main-animations {
     background: url(../img/main-background-animations.jpg) 0 0;
     background-size: 100% auto;
     background-size: cover;
+    margin-top: 207px;
 }
 
 .lvdp-main-ateliers {
     background: url(../img/main-background-ateliers.jpg) 0 0;
     background-size: 100% auto;
     background-size: cover;
+    margin-top: 207px;
 }
 
 .lvdp-main-ventes {
     background: url(../img/main-background-ventes.jpg) 0 0;
     background-size: 100% auto;
     background-size: cover;
+    margin-top: 207px;
 }
 
 .lvdp-tab {
@@ -156,6 +215,16 @@ a {
     box-shadow: #ccc 1px 1px 1px;
 }
 
+.ps-container .ps-scrollbar-y-rail ,
+.ps-container .ps-scrollbar-y {
+    opacity: 0.9;
+    filter: alpha(opacity = 90);
+}
+
+.ps-container .ps-scrollbar-y {
+    background-color: white;
+}
+
 .lvdp-content {
     box-shadow: 5px 5px 10px;
     border-bottom-left-radius:  3px;
@@ -164,14 +233,37 @@ a {
     background-color: rgba(255,255,255,.8);
     text-shadow: #aaa 3px 3px 3px;
     padding-bottom: 15px;
+    position: relative;
 }
+
+/*
+@media screen and (min-width: 768px) {
+.lvdp-content {
+    max-height: 300px;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+}
+
+@media screen and (min-width: 992px) {
+.lvdp-content {
+    max-height: 400px;
+}
+}
+
+@media screen and (min-width: 1200px) {
+.lvdp-content {
+    max-height: 500px;
+}
+}
+*/
 
 .lvdp-content li {
     list-style: none;
     margin-bottom: 10px;
 }
 
-li:before {
+.lvdp-content li:before {
     content:'\2022';
     display: block;
     position: relative;
@@ -213,13 +305,13 @@ li:before {
 .lvdp-cross {
     position: absolute;
     left: -19px;
-    top: -19px;
+    top: 21px;
 }
 
 .lvdp-ribbon {
     position: absolute;
     left: -2.5px;
-    bottom: -19px;
+    bottom: -4px;
 }
 
 .lvdp-tile-head {
@@ -288,45 +380,78 @@ li:before {
 .lvdp-tile-philosophie {
     background: url(../img/page-icon-philosophie.png) no-repeat 50% 80%;
 }
+.lvdp-tile-philosophie:hover {
+    background: url(../img/page-icon-philosophie-inv.png) no-repeat 50% 80%;
+}
 
 .lvdp-tile-organisations {
     background: url(../img/page-icon-organisations.png) no-repeat 50% 80%;
+}
+.lvdp-tile-organisations:hover {
+    background: url(../img/page-icon-organisations-inv.png) no-repeat 50% 80%;
 }
 
 .lvdp-tile-coeur {
     background: url(../img/page-icon-coeur.png) no-repeat 50% 80%;
 }
+.lvdp-tile-coeur:hover {
+    background: url(../img/page-icon-coeur-inv.png) no-repeat 50% 80%;
+}
 
 .lvdp-tile-racines {
     background: url(../img/page-icon-racines.png) no-repeat 50% 80%;
+}
+.lvdp-tile-racines:hover {
+    background: url(../img/page-icon-racines-inv.png) no-repeat 50% 80%;
 }
 
 .lvdp-tile-ailes {
     background: url(../img/page-icon-ailes.png) no-repeat 50% 80%;
 }
+.lvdp-tile-ailes:hover {
+    background: url(../img/page-icon-ailes-inv.png) no-repeat 50% 80%;
+}
 
 .lvdp-tile-savoirs {
     background: url(../img/page-icon-savoirs.png) no-repeat 50% 80%;
+}
+.lvdp-tile-savoirs:hover {
+    background: url(../img/page-icon-savoirs-inv.png) no-repeat 50% 80%;
 }
 
 .lvdp-tile-cafe {
     background: url(../img/page-icon-cafe.png) no-repeat 50% 80%;
 }
+.lvdp-tile-cafe:hover {
+    background: url(../img/page-icon-cafe-inv.png) no-repeat 50% 80%;
+}
 
 .lvdp-tile-cadres {
     background: url(../img/page-icon-cadres.png) no-repeat 50% 80%;
+}
+.lvdp-tile-cadres:hover {
+    background: url(../img/page-icon-cadres-inv.png) no-repeat 50% 80%;
 }
 
 .lvdp-tile-calendrier {
     background: url(../img/page-icon-calendrier.png) no-repeat 50% 80%;
 }
+.lvdp-tile-calendrier:hover {
+    background: url(../img/page-icon-calendrier-inv.png) no-repeat 50% 80%;
+}
 
 .lvdp-tile-sur-mesure {
     background: url(../img/page-icon-sur-mesure.png) no-repeat 50% 80%;
 }
+.lvdp-tile-sur-mesure:hover {
+    background: url(../img/page-icon-sur-mesure-inv.png) no-repeat 50% 80%;
+}
 
 .lvdp-tile-vente {
     background: url(../img/page-icon-vente.png) no-repeat 50% 80%;
+}
+.lvdp-tile-vente:hover {
+    background: url(../img/page-icon-vente-inv.png) no-repeat 50% 80%;
 }
 
 }
@@ -335,16 +460,17 @@ li:before {
     .lvdp-tile-content {
         background-size: 60%;
     }
-}
-
-@media (max-width: 991px) {
-    .lvdp-tile-content {
+    .lvdp-tile-content:hover {
         background-size: 60%;
     }
 }
 
 .lvdp-tile-content {
     background-color: rgba(255,255,255,.5);
+}
+
+.lvdp-tile-content:hover {
+    background-color: rgba(190,1,133,.3);
 }
 
 .lvdp-tile-content h2 {
@@ -385,6 +511,21 @@ a.lvdp-fill-div {
 .lvdp-paraph {
     background-color: #be0185;
     padding: 10px;
+}
+
+.lvdp-merci p {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.lvdp-merci a {
+    color: black;
+}
+
+.lvdp-merci a:hover {
+    color: #be0185;
+    text-decoration: underline;
 }
 
 .lvdp-more {
@@ -499,13 +640,14 @@ a.lvdp-fill-div {
 
 .lvdp-icons {
     position: absolute;
-    bottom: 50px;
-    left: 40px;
+    bottom: 40px;
+    left: 0px;
 }
 
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 992px) {
     .lvdp-icons {
-        left: 0px;
+        left: 40px;
+        bottom: 50px;
     }
 }
 
@@ -516,5 +658,40 @@ a.lvdp-fill-div {
 
 .lvdp-footer {
     background-color: #e6e6e6;
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 12.5px;
 }
 
+.lvdp-abus {
+    margin-top: 10px;
+}
+
+.lvdp-footer h2 {
+    font-size: 18px;
+    margin-top:14px;
+}
+
+.lvdp-footer a {
+    color: black;
+    font-weight: bold;
+}
+
+.lvdp-footer-icon {
+    position: absolute;
+}
+
+.lvdp-footer-text {
+    padding-left: 60px;
+}
+
+@media screen and (min-width: 768px) {
+    .lvdp-footer-icon {
+        top: 10px;
+        left: 10px;
+    }
+}
+
+.lvdp-footer-divider {
+    height: 1px;
+    box-shadow: #ccc 1px 1px 1px;
+}

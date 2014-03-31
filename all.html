@@ -8,6 +8,7 @@
     <meta content='' name='author' />
     <link href='favicon.ico' rel='shortcut icon' />
     <link href='css/bootstrap.min.css' rel='stylesheet' />
+    <link href='css/perfect-scrollbar-0.4.8.min.css' rel='stylesheet' />
     <link href='css/les-vins-de-pauline.css' rel='stylesheet' />
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -17,40 +18,49 @@
   </head>
   <body>
     <header class='container lvdp-header'>
-      <img alt='Les Vins de Pauline - Œnologie, pédagogie et bonnes bouteilles&amp;nbsp;!' class='lvdp-tagline' src='img/tagline.png' />
-      <img class='hidden-xs hidden-sm pull-right' src='img/header-background.jpg' />
-    </header>
-    <nav class='container lvdp-nav' role='navigation'>
-      <div class='row'>
-        <div class='col-xs-1 hidden-xs lvdp-logo'>
-          <a href='pauline.html'>
-            <img class='lvdp-logo-offset' src='img/logo.png' />
-          </a>
-          &nbsp;
-        </div>
-        <div class='col-sm-1 hidden-xs lvdp-nav-item'>
-          &nbsp;
-        </div>
-        <div class='col-sm-2 lvdp-nav-item'>
-          <a href='ateliers.html'>Ateliers</a>
-        </div>
-        <div class='col-sm-2 lvdp-nav-item'>
-          <a href='ventes.html'>Ventes</a>
-        </div>
-        <div class='col-sm-2 lvdp-nav-item'>
-          <a href='formations.html'>Formations</a>
-        </div>
-        <div class='col-sm-2 lvdp-nav-item lvdp-nav-active'>
-          <a href='animations.html'>Animations</a>
-        </div>
-        <div class='col-sm-2 lvdp-nav-item'>
-          <a href='http://blog.lesvinsdepauline.fr' target='_blank'>Blog</a>
-        </div>
+      <div class='lvdp-tagline'>
+        <a href='/'>
+          <img alt='Les Vins de Pauline - Œnologie, pédagogie et bonnes bouteilles&amp;nbsp;!' class='lvdp-tagline-back' src='img/header-background.jpg' />
+          <img alt='Les Vins de Pauline - Œnologie, pédagogie et bonnes bouteilles&amp;nbsp;!' class='lvdp-tagline-front' src='img/tagline.png' />
+        </a>
       </div>
-    </nav>
+      <nav class='container lvdp-nav' role='navigation'>
+        <div class='row'>
+          <div class='col-xs-1 hidden-xs lvdp-logo'>
+            <a href='pauline.html'>
+              <img class='lvdp-logo-offset' src='img/logo.png' />
+            </a>
+            &nbsp;
+          </div>
+          <div class='col-sm-1 hidden-xs lvdp-nav-item'>
+            &nbsp;
+          </div>
+          <div class='col-sm-2 lvdp-nav-item'>
+            <a class='lvdp-fill-div' href='formations.html'></a>
+            <a href='formations.html'>Formations</a>
+          </div>
+          <div class='col-sm-2 lvdp-nav-item lvdp-nav-active'>
+            <a class='lvdp-fill-div' href='animations.html'></a>
+            <a href='animations.html'>Animations</a>
+          </div>
+          <div class='col-sm-2 lvdp-nav-item'>
+            <a class='lvdp-fill-div' href='ateliers.html'></a>
+            <a href='ateliers.html'>Ateliers</a>
+          </div>
+          <div class='col-sm-2 lvdp-nav-item'>
+            <a class='lvdp-fill-div' href='ventes.html'></a>
+            <a href='ventes.html'>Ventes</a>
+          </div>
+          <div class='col-sm-2 lvdp-nav-item'>
+            <a class='lvdp-fill-div' href='http://blog.lesvinsdepauline.fr' target='_blank'></a>
+            <a href='http://blog.lesvinsdepauline.fr' target='_blank'>Blog</a>
+          </div>
+        </div>
+      </nav>
+    </header>
     <div class='container lvdp-main-animations'>
       <div class='row lvdp-vspace'></div>
-      <div class='row'>
+      <div class='row lvdp-tile-container'>
         <div class='col-md-offset-2 col-md-9 col-sm-offset-1 col-sm-11'>
           <div class='row'>
             <div class='col-sm-3'>
@@ -89,38 +99,43 @@
         </div>
       </div>
       <div class='row lvdp-vspace'></div>
+      <nav class='container lvdp-nav' role='navigation'>
+        <div class='row'>
+          <div class='col-xs-1 hidden-xs lvdp-logo'>
+            <a href='pauline.html'>
+              <img class='lvdp-logo-offset' src='img/logo.png' />
+            </a>
+            &nbsp;
+          </div>
+          <div class='col-sm-1 hidden-xs lvdp-nav-item'>
+            &nbsp;
+          </div>
+          <div class='col-sm-2 lvdp-nav-item'>
+            <a class='lvdp-fill-div' href='formations.html'></a>
+            <a href='formations.html'>Formations</a>
+          </div>
+          <div class='col-sm-2 lvdp-nav-item'>
+            <a class='lvdp-fill-div' href='animations.html'></a>
+            <a href='animations.html'>Animations</a>
+          </div>
+          <div class='col-sm-2 lvdp-nav-item'>
+            <a class='lvdp-fill-div' href='ateliers.html'></a>
+            <a href='ateliers.html'>Ateliers</a>
+          </div>
+          <div class='col-sm-2 lvdp-nav-item lvdp-nav-active'>
+            <a class='lvdp-fill-div' href='ventes.html'></a>
+            <a href='ventes.html'>Ventes</a>
+          </div>
+          <div class='col-sm-2 lvdp-nav-item'>
+            <a class='lvdp-fill-div' href='http://blog.lesvinsdepauline.fr' target='_blank'></a>
+            <a href='http://blog.lesvinsdepauline.fr' target='_blank'>Blog</a>
+          </div>
+        </div>
+      </nav>
     </div>
-    <nav class='container lvdp-nav' role='navigation'>
-      <div class='row'>
-        <div class='col-xs-1 hidden-xs lvdp-logo'>
-          <a href='pauline.html'>
-            <img class='lvdp-logo-offset' src='img/logo.png' />
-          </a>
-          &nbsp;
-        </div>
-        <div class='col-sm-1 hidden-xs lvdp-nav-item'>
-          &nbsp;
-        </div>
-        <div class='col-sm-2 lvdp-nav-item'>
-          <a href='ateliers.html'>Ateliers</a>
-        </div>
-        <div class='col-sm-2 lvdp-nav-item lvdp-nav-active'>
-          <a href='ventes.html'>Ventes</a>
-        </div>
-        <div class='col-sm-2 lvdp-nav-item'>
-          <a href='formations.html'>Formations</a>
-        </div>
-        <div class='col-sm-2 lvdp-nav-item'>
-          <a href='animations.html'>Animations</a>
-        </div>
-        <div class='col-sm-2 lvdp-nav-item'>
-          <a href='http://blog.lesvinsdepauline.fr' target='_blank'>Blog</a>
-        </div>
-      </div>
-    </nav>
     <div class='container lvdp-main-ventes'>
       <div class='row lvdp-vspace'></div>
-      <div class='row'>
+      <div class='row lvdp-tile-container'>
         <div class='col-md-offset-2 col-md-9 col-sm-offset-1 col-sm-11'>
           <div class='row'>
             <div class='col-sm-3'>
@@ -159,38 +174,43 @@
         </div>
       </div>
       <div class='row lvdp-vspace'></div>
+      <nav class='container lvdp-nav' role='navigation'>
+        <div class='row'>
+          <div class='col-xs-1 hidden-xs lvdp-logo'>
+            <a href='pauline.html'>
+              <img class='lvdp-logo-offset' src='img/logo.png' />
+            </a>
+            &nbsp;
+          </div>
+          <div class='col-sm-1 hidden-xs lvdp-nav-item'>
+            &nbsp;
+          </div>
+          <div class='col-sm-2 lvdp-nav-item'>
+            <a class='lvdp-fill-div' href='formations.html'></a>
+            <a href='formations.html'>Formations</a>
+          </div>
+          <div class='col-sm-2 lvdp-nav-item'>
+            <a class='lvdp-fill-div' href='animations.html'></a>
+            <a href='animations.html'>Animations</a>
+          </div>
+          <div class='col-sm-2 lvdp-nav-item lvdp-nav-active'>
+            <a class='lvdp-fill-div' href='ateliers.html'></a>
+            <a href='ateliers.html'>Ateliers</a>
+          </div>
+          <div class='col-sm-2 lvdp-nav-item'>
+            <a class='lvdp-fill-div' href='ventes.html'></a>
+            <a href='ventes.html'>Ventes</a>
+          </div>
+          <div class='col-sm-2 lvdp-nav-item'>
+            <a class='lvdp-fill-div' href='http://blog.lesvinsdepauline.fr' target='_blank'></a>
+            <a href='http://blog.lesvinsdepauline.fr' target='_blank'>Blog</a>
+          </div>
+        </div>
+      </nav>
     </div>
-    <nav class='container lvdp-nav' role='navigation'>
-      <div class='row'>
-        <div class='col-xs-1 hidden-xs lvdp-logo'>
-          <a href='pauline.html'>
-            <img class='lvdp-logo-offset' src='img/logo.png' />
-          </a>
-          &nbsp;
-        </div>
-        <div class='col-sm-1 hidden-xs lvdp-nav-item'>
-          &nbsp;
-        </div>
-        <div class='col-sm-2 lvdp-nav-item lvdp-nav-active'>
-          <a href='ateliers.html'>Ateliers</a>
-        </div>
-        <div class='col-sm-2 lvdp-nav-item'>
-          <a href='ventes.html'>Ventes</a>
-        </div>
-        <div class='col-sm-2 lvdp-nav-item'>
-          <a href='formations.html'>Formations</a>
-        </div>
-        <div class='col-sm-2 lvdp-nav-item'>
-          <a href='animations.html'>Animations</a>
-        </div>
-        <div class='col-sm-2 lvdp-nav-item'>
-          <a href='http://blog.lesvinsdepauline.fr' target='_blank'>Blog</a>
-        </div>
-      </div>
-    </nav>
     <div class='container lvdp-main-ateliers'>
       <div class='row lvdp-vspace'></div>
-      <div class='row'>
+      <div class='row lvdp-tile-container'>
         <div class='col-md-offset-2 col-md-9 col-sm-offset-1 col-sm-11'>
           <div class='row'>
             <div class='col-sm-3'>
@@ -229,38 +249,43 @@
         </div>
       </div>
       <div class='row lvdp-vspace'></div>
+      <nav class='container lvdp-nav' role='navigation'>
+        <div class='row'>
+          <div class='col-xs-1 hidden-xs lvdp-logo'>
+            <a href='pauline.html'>
+              <img class='lvdp-logo-offset' src='img/logo.png' />
+            </a>
+            &nbsp;
+          </div>
+          <div class='col-sm-1 hidden-xs lvdp-nav-item'>
+            &nbsp;
+          </div>
+          <div class='col-sm-2 lvdp-nav-item lvdp-nav-active'>
+            <a class='lvdp-fill-div' href='formations.html'></a>
+            <a href='formations.html'>Formations</a>
+          </div>
+          <div class='col-sm-2 lvdp-nav-item'>
+            <a class='lvdp-fill-div' href='animations.html'></a>
+            <a href='animations.html'>Animations</a>
+          </div>
+          <div class='col-sm-2 lvdp-nav-item'>
+            <a class='lvdp-fill-div' href='ateliers.html'></a>
+            <a href='ateliers.html'>Ateliers</a>
+          </div>
+          <div class='col-sm-2 lvdp-nav-item'>
+            <a class='lvdp-fill-div' href='ventes.html'></a>
+            <a href='ventes.html'>Ventes</a>
+          </div>
+          <div class='col-sm-2 lvdp-nav-item'>
+            <a class='lvdp-fill-div' href='http://blog.lesvinsdepauline.fr' target='_blank'></a>
+            <a href='http://blog.lesvinsdepauline.fr' target='_blank'>Blog</a>
+          </div>
+        </div>
+      </nav>
     </div>
-    <nav class='container lvdp-nav' role='navigation'>
-      <div class='row'>
-        <div class='col-xs-1 hidden-xs lvdp-logo'>
-          <a href='pauline.html'>
-            <img class='lvdp-logo-offset' src='img/logo.png' />
-          </a>
-          &nbsp;
-        </div>
-        <div class='col-sm-1 hidden-xs lvdp-nav-item'>
-          &nbsp;
-        </div>
-        <div class='col-sm-2 lvdp-nav-item'>
-          <a href='ateliers.html'>Ateliers</a>
-        </div>
-        <div class='col-sm-2 lvdp-nav-item'>
-          <a href='ventes.html'>Ventes</a>
-        </div>
-        <div class='col-sm-2 lvdp-nav-item lvdp-nav-active'>
-          <a href='formations.html'>Formations</a>
-        </div>
-        <div class='col-sm-2 lvdp-nav-item'>
-          <a href='animations.html'>Animations</a>
-        </div>
-        <div class='col-sm-2 lvdp-nav-item'>
-          <a href='http://blog.lesvinsdepauline.fr' target='_blank'>Blog</a>
-        </div>
-      </div>
-    </nav>
     <div class='container lvdp-main-formations'>
       <div class='row lvdp-vspace'></div>
-      <div class='row'>
+      <div class='row lvdp-tile-container'>
         <div class='col-md-offset-2 col-md-9 col-sm-offset-1 col-sm-11'>
           <div class='row'>
             <div class='col-sm-3'>
@@ -301,38 +326,43 @@
         </div>
       </div>
       <div class='row lvdp-vspace'></div>
+      <nav class='container lvdp-nav' role='navigation'>
+        <div class='row'>
+          <div class='col-xs-1 hidden-xs lvdp-logo'>
+            <a href='pauline.html'>
+              <img class='lvdp-logo-offset' src='img/logo.png' />
+            </a>
+            &nbsp;
+          </div>
+          <div class='col-sm-1 hidden-xs lvdp-nav-item'>
+            &nbsp;
+          </div>
+          <div class='col-sm-2 lvdp-nav-item'>
+            <a class='lvdp-fill-div' href='formations.html'></a>
+            <a href='formations.html'>Formations</a>
+          </div>
+          <div class='col-sm-2 lvdp-nav-item'>
+            <a class='lvdp-fill-div' href='animations.html'></a>
+            <a href='animations.html'>Animations</a>
+          </div>
+          <div class='col-sm-2 lvdp-nav-item'>
+            <a class='lvdp-fill-div' href='ateliers.html'></a>
+            <a href='ateliers.html'>Ateliers</a>
+          </div>
+          <div class='col-sm-2 lvdp-nav-item'>
+            <a class='lvdp-fill-div' href='ventes.html'></a>
+            <a href='ventes.html'>Ventes</a>
+          </div>
+          <div class='col-sm-2 lvdp-nav-item'>
+            <a class='lvdp-fill-div' href='http://blog.lesvinsdepauline.fr' target='_blank'></a>
+            <a href='http://blog.lesvinsdepauline.fr' target='_blank'>Blog</a>
+          </div>
+        </div>
+      </nav>
     </div>
-    <nav class='container lvdp-nav' role='navigation'>
-      <div class='row'>
-        <div class='col-xs-1 hidden-xs lvdp-logo'>
-          <a href='pauline.html'>
-            <img class='lvdp-logo-offset' src='img/logo.png' />
-          </a>
-          &nbsp;
-        </div>
-        <div class='col-sm-1 hidden-xs lvdp-nav-item'>
-          &nbsp;
-        </div>
-        <div class='col-sm-2 lvdp-nav-item'>
-          <a href='ateliers.html'>Ateliers</a>
-        </div>
-        <div class='col-sm-2 lvdp-nav-item'>
-          <a href='ventes.html'>Ventes</a>
-        </div>
-        <div class='col-sm-2 lvdp-nav-item'>
-          <a href='formations.html'>Formations</a>
-        </div>
-        <div class='col-sm-2 lvdp-nav-item'>
-          <a href='animations.html'>Animations</a>
-        </div>
-        <div class='col-sm-2 lvdp-nav-item'>
-          <a href='http://blog.lesvinsdepauline.fr' target='_blank'>Blog</a>
-        </div>
-      </div>
-    </nav>
     <div class='container lvdp-main-pauline'>
       <div class='row lvdp-vspace'></div>
-      <div class='row'>
+      <div class='row lvdp-tile-container'>
         <div class='col-md-offset-2 col-md-9 col-sm-offset-1 col-sm-11'>
           <div class='row'>
             <div class='col-sm-3'>
@@ -380,35 +410,41 @@
           </div>
         </div>
       </div>
+      <div class='row lvdp-vspace'></div>
+      <nav class='container lvdp-nav' role='navigation'>
+        <div class='row'>
+          <div class='col-xs-1 hidden-xs lvdp-logo'>
+            <a href='pauline.html'>
+              <img class='lvdp-logo-offset' src='img/logo.png' />
+            </a>
+            &nbsp;
+          </div>
+          <div class='col-sm-1 hidden-xs lvdp-nav-item'>
+            &nbsp;
+          </div>
+          <div class='col-sm-2 lvdp-nav-item'>
+            <a class='lvdp-fill-div' href='formations.html'></a>
+            <a href='formations.html'>Formations</a>
+          </div>
+          <div class='col-sm-2 lvdp-nav-item lvdp-nav-active'>
+            <a class='lvdp-fill-div' href='animations.html'></a>
+            <a href='animations.html'>Animations</a>
+          </div>
+          <div class='col-sm-2 lvdp-nav-item'>
+            <a class='lvdp-fill-div' href='ateliers.html'></a>
+            <a href='ateliers.html'>Ateliers</a>
+          </div>
+          <div class='col-sm-2 lvdp-nav-item'>
+            <a class='lvdp-fill-div' href='ventes.html'></a>
+            <a href='ventes.html'>Ventes</a>
+          </div>
+          <div class='col-sm-2 lvdp-nav-item'>
+            <a class='lvdp-fill-div' href='http://blog.lesvinsdepauline.fr' target='_blank'></a>
+            <a href='http://blog.lesvinsdepauline.fr' target='_blank'>Blog</a>
+          </div>
+        </div>
+      </nav>
     </div>
-    <nav class='container lvdp-nav' role='navigation'>
-      <div class='row'>
-        <div class='col-xs-1 hidden-xs lvdp-logo'>
-          <a href='pauline.html'>
-            <img class='lvdp-logo-offset' src='img/logo.png' />
-          </a>
-          &nbsp;
-        </div>
-        <div class='col-sm-1 hidden-xs lvdp-nav-item'>
-          &nbsp;
-        </div>
-        <div class='col-sm-2 lvdp-nav-item'>
-          <a href='ateliers.html'>Ateliers</a>
-        </div>
-        <div class='col-sm-2 lvdp-nav-item'>
-          <a href='ventes.html'>Ventes</a>
-        </div>
-        <div class='col-sm-2 lvdp-nav-item'>
-          <a href='formations.html'>Formations</a>
-        </div>
-        <div class='col-sm-2 lvdp-nav-item lvdp-nav-active'>
-          <a href='animations.html'>Animations</a>
-        </div>
-        <div class='col-sm-2 lvdp-nav-item'>
-          <a href='http://blog.lesvinsdepauline.fr' target='_blank'>Blog</a>
-        </div>
-      </div>
-    </nav>
     <div class='container lvdp-main-animations'>
       <div class='row lvdp-vspace'></div>
       <div class='row'>
@@ -416,14 +452,15 @@
           <div class='row'>
             <div class='lvdp-tab pull-right'>
               <a class='lvdp-fill-div' href='evenement-entreprise-references.html'></a>
-              Merci !
+              <a href='evenement-entreprise-references.html'>
+                Merci !
+              </a>
             </div>
             <div class='lvdp-tab pull-right'>
               <a class='lvdp-fill-div' href='evenement-degustation-vin-entreprise.html'></a>
-              Des organisations
-            </div>
-            <div class='lvdp-tab lvdp-tab-active pull-right'>
-              Une Philosophie
+              <a href='evenement-degustation-vin-entreprise.html'>
+                Des organisations
+              </a>
             </div>
           </div>
           <div class='row lvdp-content' role='main'>
@@ -447,42 +484,47 @@
               </div>
               <img class='pull-left' src='img/signature-black.png' />
               <img class='pull-right' src='img/page-icon-philosophie.png' />
-              <img class='hidden-xs lvdp-cross' src='img/cross.png' />
-              <img class='lvdp-ribbon' src='img/ribbon.png' />
             </div>
           </div>
+          <img class='hidden-xs lvdp-cross' src='img/cross.png' />
+          <img class='lvdp-ribbon' src='img/ribbon.png' />
         </div>
       </div>
       <div class='row lvdp-vspace'></div>
+      <nav class='container lvdp-nav' role='navigation'>
+        <div class='row'>
+          <div class='col-xs-1 hidden-xs lvdp-logo'>
+            <a href='pauline.html'>
+              <img class='lvdp-logo-offset' src='img/logo.png' />
+            </a>
+            &nbsp;
+          </div>
+          <div class='col-sm-1 hidden-xs lvdp-nav-item'>
+            &nbsp;
+          </div>
+          <div class='col-sm-2 lvdp-nav-item'>
+            <a class='lvdp-fill-div' href='formations.html'></a>
+            <a href='formations.html'>Formations</a>
+          </div>
+          <div class='col-sm-2 lvdp-nav-item lvdp-nav-active'>
+            <a class='lvdp-fill-div' href='animations.html'></a>
+            <a href='animations.html'>Animations</a>
+          </div>
+          <div class='col-sm-2 lvdp-nav-item'>
+            <a class='lvdp-fill-div' href='ateliers.html'></a>
+            <a href='ateliers.html'>Ateliers</a>
+          </div>
+          <div class='col-sm-2 lvdp-nav-item'>
+            <a class='lvdp-fill-div' href='ventes.html'></a>
+            <a href='ventes.html'>Ventes</a>
+          </div>
+          <div class='col-sm-2 lvdp-nav-item'>
+            <a class='lvdp-fill-div' href='http://blog.lesvinsdepauline.fr' target='_blank'></a>
+            <a href='http://blog.lesvinsdepauline.fr' target='_blank'>Blog</a>
+          </div>
+        </div>
+      </nav>
     </div>
-    <nav class='container lvdp-nav' role='navigation'>
-      <div class='row'>
-        <div class='col-xs-1 hidden-xs lvdp-logo'>
-          <a href='pauline.html'>
-            <img class='lvdp-logo-offset' src='img/logo.png' />
-          </a>
-          &nbsp;
-        </div>
-        <div class='col-sm-1 hidden-xs lvdp-nav-item'>
-          &nbsp;
-        </div>
-        <div class='col-sm-2 lvdp-nav-item'>
-          <a href='ateliers.html'>Ateliers</a>
-        </div>
-        <div class='col-sm-2 lvdp-nav-item'>
-          <a href='ventes.html'>Ventes</a>
-        </div>
-        <div class='col-sm-2 lvdp-nav-item'>
-          <a href='formations.html'>Formations</a>
-        </div>
-        <div class='col-sm-2 lvdp-nav-item lvdp-nav-active'>
-          <a href='animations.html'>Animations</a>
-        </div>
-        <div class='col-sm-2 lvdp-nav-item'>
-          <a href='http://blog.lesvinsdepauline.fr' target='_blank'>Blog</a>
-        </div>
-      </div>
-    </nav>
     <div class='container lvdp-main-animations'>
       <div class='row lvdp-vspace'></div>
       <div class='row'>
@@ -490,14 +532,15 @@
           <div class='row'>
             <div class='lvdp-tab pull-right'>
               <a class='lvdp-fill-div' href='evenement-entreprise-references.html'></a>
-              Merci !
-            </div>
-            <div class='lvdp-tab lvdp-tab-active pull-right'>
-              Des organisations
+              <a href='evenement-entreprise-references.html'>
+                Merci !
+              </a>
             </div>
             <div class='lvdp-tab pull-right'>
               <a class='lvdp-fill-div' href='animation-oenologie-entreprise.html'></a>
-              Une Philosophie
+              <a href='animation-oenologie-entreprise.html'>
+                Une Philosophie
+              </a>
             </div>
           </div>
           <div class='row lvdp-content' role='main'>
@@ -541,80 +584,118 @@
               </div>
               <img class='pull-left' src='img/signature-black.png' />
               <img class='pull-right' src='img/page-icon-organisations.png' />
-              <img class='hidden-xs lvdp-cross' src='img/cross.png' />
-              <img class='lvdp-ribbon' src='img/ribbon.png' />
             </div>
           </div>
+          <img class='hidden-xs lvdp-cross' src='img/cross.png' />
+          <img class='lvdp-ribbon' src='img/ribbon.png' />
         </div>
       </div>
       <div class='row lvdp-vspace'></div>
+      <nav class='container lvdp-nav' role='navigation'>
+        <div class='row'>
+          <div class='col-xs-1 hidden-xs lvdp-logo'>
+            <a href='pauline.html'>
+              <img class='lvdp-logo-offset' src='img/logo.png' />
+            </a>
+            &nbsp;
+          </div>
+          <div class='col-sm-1 hidden-xs lvdp-nav-item'>
+            &nbsp;
+          </div>
+          <div class='col-sm-2 lvdp-nav-item'>
+            <a class='lvdp-fill-div' href='formations.html'></a>
+            <a href='formations.html'>Formations</a>
+          </div>
+          <div class='col-sm-2 lvdp-nav-item lvdp-nav-active'>
+            <a class='lvdp-fill-div' href='animations.html'></a>
+            <a href='animations.html'>Animations</a>
+          </div>
+          <div class='col-sm-2 lvdp-nav-item'>
+            <a class='lvdp-fill-div' href='ateliers.html'></a>
+            <a href='ateliers.html'>Ateliers</a>
+          </div>
+          <div class='col-sm-2 lvdp-nav-item'>
+            <a class='lvdp-fill-div' href='ventes.html'></a>
+            <a href='ventes.html'>Ventes</a>
+          </div>
+          <div class='col-sm-2 lvdp-nav-item'>
+            <a class='lvdp-fill-div' href='http://blog.lesvinsdepauline.fr' target='_blank'></a>
+            <a href='http://blog.lesvinsdepauline.fr' target='_blank'>Blog</a>
+          </div>
+        </div>
+      </nav>
     </div>
-    <nav class='container lvdp-nav' role='navigation'>
-      <div class='row'>
-        <div class='col-xs-1 hidden-xs lvdp-logo'>
-          <a href='pauline.html'>
-            <img class='lvdp-logo-offset' src='img/logo.png' />
-          </a>
-          &nbsp;
-        </div>
-        <div class='col-sm-1 hidden-xs lvdp-nav-item'>
-          &nbsp;
-        </div>
-        <div class='col-sm-2 lvdp-nav-item'>
-          <a href='ateliers.html'>Ateliers</a>
-        </div>
-        <div class='col-sm-2 lvdp-nav-item'>
-          <a href='ventes.html'>Ventes</a>
-        </div>
-        <div class='col-sm-2 lvdp-nav-item'>
-          <a href='formations.html'>Formations</a>
-        </div>
-        <div class='col-sm-2 lvdp-nav-item lvdp-nav-active'>
-          <a href='animations.html'>Animations</a>
-        </div>
-        <div class='col-sm-2 lvdp-nav-item'>
-          <a href='http://blog.lesvinsdepauline.fr' target='_blank'>Blog</a>
-        </div>
-      </div>
-    </nav>
     <div class='container lvdp-main-animations'>
       <div class='row lvdp-vspace'></div>
       <div class='row'>
         <div class='col-sm-offset-2 col-sm-9'>
           <div class='row'>
-            <div class='lvdp-tab lvdp-tab-active pull-right'>
-              Merci !
-            </div>
             <div class='lvdp-tab pull-right'>
               <a class='lvdp-fill-div' href='evenement-degustation-vin-entreprise.html'></a>
-              Des organisations
+              <a href='evenement-degustation-vin-entreprise.html'>
+                Des organisations
+              </a>
             </div>
             <div class='lvdp-tab pull-right'>
               <a class='lvdp-fill-div' href='animation-oenologie-entreprise.html'></a>
-              Une Philosophie
+              <a href='animation-oenologie-entreprise.html'>
+                Une Philosophie
+              </a>
             </div>
           </div>
           <div class='row lvdp-content' role='main'>
             <div class='col-sm-12 pull-left'>
               <h1>Merci&nbsp;!</h1>
-              <p>Ils nous ont confiés leurs événements&nbsp;:</p>
-              <ul>
-                <li>Vilogia</li>
-                <li>Caisse d'Épargne Nord France Europe</li>
-                <li>On a marché sur la Lune</li>
-                <li>Artjo Huntleigh</li>
-                <li>Les jardins de l'amphytrion</li>
-                <li>Les salons Kennedy</li>
-                <li>Axa Assurances</li>
-                <li>Images et Légendes</li>
-                <li>Lion's Club</li>
-                <li>Le Cerib</li>
-                <li>ERDF</li>
-                <li>Zodio</li>
-                <li>Contrechamps</li>
-                <li>Club 41</li>
-                <li>...</li>
-              </ul>
+              <div class='row lvdp-merci'>
+                <div class='col-sm-4'>
+                  <p>
+                    <a href='http://www.vilogia.fr/'>Vilogia</a>
+                  </p>
+                  <p>
+                    <a href='https://www.caisse-epargne.fr/particuliers/nord-france-europe/accueil.aspx'>Caisse d'Épargne Nord France Europe</a>
+                  </p>
+                  <p>
+                    <a href='http://onamarchesurlalune.com/'>On a marché sur la Lune</a>
+                  </p>
+                  <p>
+                    <a href='http://www.arjohuntleigh.com/'>Artjo Huntleigh</a>
+                  </p>
+                  <p>
+                    <a href='http://www.amphitryon.fr/'>Les jardins de l'amphitryon</a>
+                  </p>
+                </div>
+                <div class='col-sm-4'>
+                  <p>
+                    <a href='http://www.salonskennedy.com/'>Les salons Kennedy</a>
+                  </p>
+                  <p>
+                    <a href='http://www.axa.fr/'>Axa Assurances</a>
+                  </p>
+                  <p>
+                    <a href='http://imagesetlegendes.com/'>Images et Légendes</a>
+                  </p>
+                  <p>
+                    <a href='http://www.lionsclubs.org/'>Lion's Club</a>
+                  </p>
+                  <p>
+                    <a href='http://www.cerib.com/'>Le Cerib</a>
+                  </p>
+                </div>
+                <div class='col-sm-4'>
+                  <p>
+                    <a href='http://www.erdf.fr/'>ERDF</a>
+                  </p>
+                  <p>
+                    <a href='http://www.zodio.fr/'>Zodio</a>
+                  </p>
+                  <p>
+                    <a href='http://contre-champs.fr/'>Contrechamps</a>
+                  </p>
+                  <p>
+                    <a href='http://clubfourtyone.com/'>Club 41</a>
+                  </p>
+                </div>
+              </div>
               <div class='lvdp-plus'>
                 <img src='img/cross-circled.png' />
                 <div class='lvdp-plus-box'>
@@ -630,42 +711,47 @@
               </div>
               <img class='pull-left' src='img/signature-black.png' />
               <img class='pull-right' src='img/page-icon-coeur.png' />
-              <img class='hidden-xs lvdp-cross' src='img/cross.png' />
-              <img class='lvdp-ribbon' src='img/ribbon.png' />
             </div>
           </div>
+          <img class='hidden-xs lvdp-cross' src='img/cross.png' />
+          <img class='lvdp-ribbon' src='img/ribbon.png' />
         </div>
       </div>
       <div class='row lvdp-vspace'></div>
+      <nav class='container lvdp-nav' role='navigation'>
+        <div class='row'>
+          <div class='col-xs-1 hidden-xs lvdp-logo'>
+            <a href='pauline.html'>
+              <img class='lvdp-logo-offset' src='img/logo.png' />
+            </a>
+            &nbsp;
+          </div>
+          <div class='col-sm-1 hidden-xs lvdp-nav-item'>
+            &nbsp;
+          </div>
+          <div class='col-sm-2 lvdp-nav-item'>
+            <a class='lvdp-fill-div' href='formations.html'></a>
+            <a href='formations.html'>Formations</a>
+          </div>
+          <div class='col-sm-2 lvdp-nav-item'>
+            <a class='lvdp-fill-div' href='animations.html'></a>
+            <a href='animations.html'>Animations</a>
+          </div>
+          <div class='col-sm-2 lvdp-nav-item'>
+            <a class='lvdp-fill-div' href='ateliers.html'></a>
+            <a href='ateliers.html'>Ateliers</a>
+          </div>
+          <div class='col-sm-2 lvdp-nav-item lvdp-nav-active'>
+            <a class='lvdp-fill-div' href='ventes.html'></a>
+            <a href='ventes.html'>Ventes</a>
+          </div>
+          <div class='col-sm-2 lvdp-nav-item'>
+            <a class='lvdp-fill-div' href='http://blog.lesvinsdepauline.fr' target='_blank'></a>
+            <a href='http://blog.lesvinsdepauline.fr' target='_blank'>Blog</a>
+          </div>
+        </div>
+      </nav>
     </div>
-    <nav class='container lvdp-nav' role='navigation'>
-      <div class='row'>
-        <div class='col-xs-1 hidden-xs lvdp-logo'>
-          <a href='pauline.html'>
-            <img class='lvdp-logo-offset' src='img/logo.png' />
-          </a>
-          &nbsp;
-        </div>
-        <div class='col-sm-1 hidden-xs lvdp-nav-item'>
-          &nbsp;
-        </div>
-        <div class='col-sm-2 lvdp-nav-item'>
-          <a href='ateliers.html'>Ateliers</a>
-        </div>
-        <div class='col-sm-2 lvdp-nav-item lvdp-nav-active'>
-          <a href='ventes.html'>Ventes</a>
-        </div>
-        <div class='col-sm-2 lvdp-nav-item'>
-          <a href='formations.html'>Formations</a>
-        </div>
-        <div class='col-sm-2 lvdp-nav-item'>
-          <a href='animations.html'>Animations</a>
-        </div>
-        <div class='col-sm-2 lvdp-nav-item'>
-          <a href='http://blog.lesvinsdepauline.fr' target='_blank'>Blog</a>
-        </div>
-      </div>
-    </nav>
     <div class='container lvdp-main-ventes'>
       <div class='row lvdp-vspace'></div>
       <div class='row'>
@@ -673,14 +759,15 @@
           <div class='row'>
             <div class='lvdp-tab pull-right'>
               <a class='lvdp-fill-div' href='vente-vin-domicile.html'></a>
-              Organiser une vente
+              <a href='vente-vin-domicile.html'>
+                Organiser une vente
+              </a>
             </div>
             <div class='lvdp-tab pull-right'>
               <a class='lvdp-fill-div' href='vente-privee-vin.html'></a>
-              Calendrier
-            </div>
-            <div class='lvdp-tab lvdp-tab-active pull-right'>
-              Nos ventes privées
+              <a href='vente-privee-vin.html'>
+                Calendrier
+              </a>
             </div>
           </div>
           <div class='row lvdp-content' role='main'>
@@ -688,42 +775,47 @@
               <h1>Nos ventes privées</h1>
               <p>Nous vous invitons à découvrir nos «&nbsp;bons plans&nbsp;» producteurs&nbsp;! Voyageant toute l'année au sein des vignobles, Pauline ramène de bonnes bouteilles dans ses valises et vous propose des événements ponctuels, des magasins éphémères, où vous pourrez déguster toute la gamme des vins de Pauline en exclusivité&nbsp;!</p>
               <img class='pull-right' src='img/page-icon-vente.png' />
-              <img class='hidden-xs lvdp-cross' src='img/cross.png' />
-              <img class='lvdp-ribbon' src='img/ribbon.png' />
             </div>
           </div>
+          <img class='hidden-xs lvdp-cross' src='img/cross.png' />
+          <img class='lvdp-ribbon' src='img/ribbon.png' />
         </div>
       </div>
       <div class='row lvdp-vspace'></div>
+      <nav class='container lvdp-nav' role='navigation'>
+        <div class='row'>
+          <div class='col-xs-1 hidden-xs lvdp-logo'>
+            <a href='pauline.html'>
+              <img class='lvdp-logo-offset' src='img/logo.png' />
+            </a>
+            &nbsp;
+          </div>
+          <div class='col-sm-1 hidden-xs lvdp-nav-item'>
+            &nbsp;
+          </div>
+          <div class='col-sm-2 lvdp-nav-item'>
+            <a class='lvdp-fill-div' href='formations.html'></a>
+            <a href='formations.html'>Formations</a>
+          </div>
+          <div class='col-sm-2 lvdp-nav-item'>
+            <a class='lvdp-fill-div' href='animations.html'></a>
+            <a href='animations.html'>Animations</a>
+          </div>
+          <div class='col-sm-2 lvdp-nav-item'>
+            <a class='lvdp-fill-div' href='ateliers.html'></a>
+            <a href='ateliers.html'>Ateliers</a>
+          </div>
+          <div class='col-sm-2 lvdp-nav-item lvdp-nav-active'>
+            <a class='lvdp-fill-div' href='ventes.html'></a>
+            <a href='ventes.html'>Ventes</a>
+          </div>
+          <div class='col-sm-2 lvdp-nav-item'>
+            <a class='lvdp-fill-div' href='http://blog.lesvinsdepauline.fr' target='_blank'></a>
+            <a href='http://blog.lesvinsdepauline.fr' target='_blank'>Blog</a>
+          </div>
+        </div>
+      </nav>
     </div>
-    <nav class='container lvdp-nav' role='navigation'>
-      <div class='row'>
-        <div class='col-xs-1 hidden-xs lvdp-logo'>
-          <a href='pauline.html'>
-            <img class='lvdp-logo-offset' src='img/logo.png' />
-          </a>
-          &nbsp;
-        </div>
-        <div class='col-sm-1 hidden-xs lvdp-nav-item'>
-          &nbsp;
-        </div>
-        <div class='col-sm-2 lvdp-nav-item'>
-          <a href='ateliers.html'>Ateliers</a>
-        </div>
-        <div class='col-sm-2 lvdp-nav-item lvdp-nav-active'>
-          <a href='ventes.html'>Ventes</a>
-        </div>
-        <div class='col-sm-2 lvdp-nav-item'>
-          <a href='formations.html'>Formations</a>
-        </div>
-        <div class='col-sm-2 lvdp-nav-item'>
-          <a href='animations.html'>Animations</a>
-        </div>
-        <div class='col-sm-2 lvdp-nav-item'>
-          <a href='http://blog.lesvinsdepauline.fr' target='_blank'>Blog</a>
-        </div>
-      </div>
-    </nav>
     <div class='container lvdp-main-ventes'>
       <div class='row lvdp-vspace'></div>
       <div class='row'>
@@ -731,14 +823,15 @@
           <div class='row'>
             <div class='lvdp-tab pull-right'>
               <a class='lvdp-fill-div' href='vente-vin-domicile.html'></a>
-              Organiser une vente
-            </div>
-            <div class='lvdp-tab lvdp-tab-active pull-right'>
-              Calendrier
+              <a href='vente-vin-domicile.html'>
+                Organiser une vente
+              </a>
             </div>
             <div class='lvdp-tab pull-right'>
               <a class='lvdp-fill-div' href='bons-plans-vin.html'></a>
-              Nos ventes privées
+              <a href='bons-plans-vin.html'>
+                Nos ventes privées
+              </a>
             </div>
           </div>
           <div class='row lvdp-content' role='main'>
@@ -756,57 +849,63 @@
                 pour commander une sélection de nos vins. Ces bouteilles pourront vous être livrées sur la métropole lilloise ou expédiées partout en France, à votre demande.
               </p>
               <img class='pull-right' src='img/page-icon-calendrier.png' />
-              <img class='hidden-xs lvdp-cross' src='img/cross.png' />
-              <img class='lvdp-ribbon' src='img/ribbon.png' />
             </div>
           </div>
+          <img class='hidden-xs lvdp-cross' src='img/cross.png' />
+          <img class='lvdp-ribbon' src='img/ribbon.png' />
         </div>
       </div>
       <div class='row lvdp-vspace'></div>
+      <nav class='container lvdp-nav' role='navigation'>
+        <div class='row'>
+          <div class='col-xs-1 hidden-xs lvdp-logo'>
+            <a href='pauline.html'>
+              <img class='lvdp-logo-offset' src='img/logo.png' />
+            </a>
+            &nbsp;
+          </div>
+          <div class='col-sm-1 hidden-xs lvdp-nav-item'>
+            &nbsp;
+          </div>
+          <div class='col-sm-2 lvdp-nav-item'>
+            <a class='lvdp-fill-div' href='formations.html'></a>
+            <a href='formations.html'>Formations</a>
+          </div>
+          <div class='col-sm-2 lvdp-nav-item'>
+            <a class='lvdp-fill-div' href='animations.html'></a>
+            <a href='animations.html'>Animations</a>
+          </div>
+          <div class='col-sm-2 lvdp-nav-item'>
+            <a class='lvdp-fill-div' href='ateliers.html'></a>
+            <a href='ateliers.html'>Ateliers</a>
+          </div>
+          <div class='col-sm-2 lvdp-nav-item lvdp-nav-active'>
+            <a class='lvdp-fill-div' href='ventes.html'></a>
+            <a href='ventes.html'>Ventes</a>
+          </div>
+          <div class='col-sm-2 lvdp-nav-item'>
+            <a class='lvdp-fill-div' href='http://blog.lesvinsdepauline.fr' target='_blank'></a>
+            <a href='http://blog.lesvinsdepauline.fr' target='_blank'>Blog</a>
+          </div>
+        </div>
+      </nav>
     </div>
-    <nav class='container lvdp-nav' role='navigation'>
-      <div class='row'>
-        <div class='col-xs-1 hidden-xs lvdp-logo'>
-          <a href='pauline.html'>
-            <img class='lvdp-logo-offset' src='img/logo.png' />
-          </a>
-          &nbsp;
-        </div>
-        <div class='col-sm-1 hidden-xs lvdp-nav-item'>
-          &nbsp;
-        </div>
-        <div class='col-sm-2 lvdp-nav-item'>
-          <a href='ateliers.html'>Ateliers</a>
-        </div>
-        <div class='col-sm-2 lvdp-nav-item lvdp-nav-active'>
-          <a href='ventes.html'>Ventes</a>
-        </div>
-        <div class='col-sm-2 lvdp-nav-item'>
-          <a href='formations.html'>Formations</a>
-        </div>
-        <div class='col-sm-2 lvdp-nav-item'>
-          <a href='animations.html'>Animations</a>
-        </div>
-        <div class='col-sm-2 lvdp-nav-item'>
-          <a href='http://blog.lesvinsdepauline.fr' target='_blank'>Blog</a>
-        </div>
-      </div>
-    </nav>
     <div class='container lvdp-main-ventes'>
       <div class='row lvdp-vspace'></div>
       <div class='row'>
         <div class='col-sm-offset-2 col-sm-9'>
           <div class='row'>
-            <div class='lvdp-tab lvdp-tab-active pull-right'>
-              Organiser une vente
-            </div>
             <div class='lvdp-tab pull-right'>
               <a class='lvdp-fill-div' href='vente-privee-vin.html'></a>
-              Calendrier
+              <a href='vente-privee-vin.html'>
+                Calendrier
+              </a>
             </div>
             <div class='lvdp-tab pull-right'>
               <a class='lvdp-fill-div' href='bons-plans-vin.html'></a>
-              Nos ventes privées
+              <a href='bons-plans-vin.html'>
+                Nos ventes privées
+              </a>
             </div>
           </div>
           <div class='row lvdp-content' role='main'>
@@ -820,42 +919,47 @@
                 pour plus de renseignements.
               </p>
               <img class='pull-right' src='img/page-icon-organisations.png' />
-              <img class='hidden-xs lvdp-cross' src='img/cross.png' />
-              <img class='lvdp-ribbon' src='img/ribbon.png' />
             </div>
           </div>
+          <img class='hidden-xs lvdp-cross' src='img/cross.png' />
+          <img class='lvdp-ribbon' src='img/ribbon.png' />
         </div>
       </div>
       <div class='row lvdp-vspace'></div>
+      <nav class='container lvdp-nav' role='navigation'>
+        <div class='row'>
+          <div class='col-xs-1 hidden-xs lvdp-logo'>
+            <a href='pauline.html'>
+              <img class='lvdp-logo-offset' src='img/logo.png' />
+            </a>
+            &nbsp;
+          </div>
+          <div class='col-sm-1 hidden-xs lvdp-nav-item'>
+            &nbsp;
+          </div>
+          <div class='col-sm-2 lvdp-nav-item'>
+            <a class='lvdp-fill-div' href='formations.html'></a>
+            <a href='formations.html'>Formations</a>
+          </div>
+          <div class='col-sm-2 lvdp-nav-item'>
+            <a class='lvdp-fill-div' href='animations.html'></a>
+            <a href='animations.html'>Animations</a>
+          </div>
+          <div class='col-sm-2 lvdp-nav-item lvdp-nav-active'>
+            <a class='lvdp-fill-div' href='ateliers.html'></a>
+            <a href='ateliers.html'>Ateliers</a>
+          </div>
+          <div class='col-sm-2 lvdp-nav-item'>
+            <a class='lvdp-fill-div' href='ventes.html'></a>
+            <a href='ventes.html'>Ventes</a>
+          </div>
+          <div class='col-sm-2 lvdp-nav-item'>
+            <a class='lvdp-fill-div' href='http://blog.lesvinsdepauline.fr' target='_blank'></a>
+            <a href='http://blog.lesvinsdepauline.fr' target='_blank'>Blog</a>
+          </div>
+        </div>
+      </nav>
     </div>
-    <nav class='container lvdp-nav' role='navigation'>
-      <div class='row'>
-        <div class='col-xs-1 hidden-xs lvdp-logo'>
-          <a href='pauline.html'>
-            <img class='lvdp-logo-offset' src='img/logo.png' />
-          </a>
-          &nbsp;
-        </div>
-        <div class='col-sm-1 hidden-xs lvdp-nav-item'>
-          &nbsp;
-        </div>
-        <div class='col-sm-2 lvdp-nav-item lvdp-nav-active'>
-          <a href='ateliers.html'>Ateliers</a>
-        </div>
-        <div class='col-sm-2 lvdp-nav-item'>
-          <a href='ventes.html'>Ventes</a>
-        </div>
-        <div class='col-sm-2 lvdp-nav-item'>
-          <a href='formations.html'>Formations</a>
-        </div>
-        <div class='col-sm-2 lvdp-nav-item'>
-          <a href='animations.html'>Animations</a>
-        </div>
-        <div class='col-sm-2 lvdp-nav-item'>
-          <a href='http://blog.lesvinsdepauline.fr' target='_blank'>Blog</a>
-        </div>
-      </div>
-    </nav>
     <div class='container lvdp-main-ateliers'>
       <div class='row lvdp-vspace'></div>
       <div class='row'>
@@ -863,14 +967,15 @@
           <div class='row'>
             <div class='lvdp-tab pull-right'>
               <a class='lvdp-fill-div' href='atelier-degustation-domicile.html'></a>
-              Sur mesure
+              <a href='atelier-degustation-domicile.html'>
+                Sur mesure
+              </a>
             </div>
             <div class='lvdp-tab pull-right'>
               <a class='lvdp-fill-div' href='initiation-oenologie-lille.html'></a>
-              Un calendrier
-            </div>
-            <div class='lvdp-tab lvdp-tab-active pull-right'>
-              Une philosophie
+              <a href='initiation-oenologie-lille.html'>
+                Un calendrier
+              </a>
             </div>
           </div>
           <div class='row lvdp-content' role='main'>
@@ -884,42 +989,47 @@
                 <strong>Bonne dégustation&nbsp;!</strong>
               </p>
               <img class='pull-right' src='img/page-icon-philosophie.png' />
-              <img class='hidden-xs lvdp-cross' src='img/cross.png' />
-              <img class='lvdp-ribbon' src='img/ribbon.png' />
             </div>
           </div>
+          <img class='hidden-xs lvdp-cross' src='img/cross.png' />
+          <img class='lvdp-ribbon' src='img/ribbon.png' />
         </div>
       </div>
       <div class='row lvdp-vspace'></div>
+      <nav class='container lvdp-nav' role='navigation'>
+        <div class='row'>
+          <div class='col-xs-1 hidden-xs lvdp-logo'>
+            <a href='pauline.html'>
+              <img class='lvdp-logo-offset' src='img/logo.png' />
+            </a>
+            &nbsp;
+          </div>
+          <div class='col-sm-1 hidden-xs lvdp-nav-item'>
+            &nbsp;
+          </div>
+          <div class='col-sm-2 lvdp-nav-item'>
+            <a class='lvdp-fill-div' href='formations.html'></a>
+            <a href='formations.html'>Formations</a>
+          </div>
+          <div class='col-sm-2 lvdp-nav-item'>
+            <a class='lvdp-fill-div' href='animations.html'></a>
+            <a href='animations.html'>Animations</a>
+          </div>
+          <div class='col-sm-2 lvdp-nav-item lvdp-nav-active'>
+            <a class='lvdp-fill-div' href='ateliers.html'></a>
+            <a href='ateliers.html'>Ateliers</a>
+          </div>
+          <div class='col-sm-2 lvdp-nav-item'>
+            <a class='lvdp-fill-div' href='ventes.html'></a>
+            <a href='ventes.html'>Ventes</a>
+          </div>
+          <div class='col-sm-2 lvdp-nav-item'>
+            <a class='lvdp-fill-div' href='http://blog.lesvinsdepauline.fr' target='_blank'></a>
+            <a href='http://blog.lesvinsdepauline.fr' target='_blank'>Blog</a>
+          </div>
+        </div>
+      </nav>
     </div>
-    <nav class='container lvdp-nav' role='navigation'>
-      <div class='row'>
-        <div class='col-xs-1 hidden-xs lvdp-logo'>
-          <a href='pauline.html'>
-            <img class='lvdp-logo-offset' src='img/logo.png' />
-          </a>
-          &nbsp;
-        </div>
-        <div class='col-sm-1 hidden-xs lvdp-nav-item'>
-          &nbsp;
-        </div>
-        <div class='col-sm-2 lvdp-nav-item lvdp-nav-active'>
-          <a href='ateliers.html'>Ateliers</a>
-        </div>
-        <div class='col-sm-2 lvdp-nav-item'>
-          <a href='ventes.html'>Ventes</a>
-        </div>
-        <div class='col-sm-2 lvdp-nav-item'>
-          <a href='formations.html'>Formations</a>
-        </div>
-        <div class='col-sm-2 lvdp-nav-item'>
-          <a href='animations.html'>Animations</a>
-        </div>
-        <div class='col-sm-2 lvdp-nav-item'>
-          <a href='http://blog.lesvinsdepauline.fr' target='_blank'>Blog</a>
-        </div>
-      </div>
-    </nav>
     <div class='container lvdp-main-ateliers'>
       <div class='row lvdp-vspace'></div>
       <div class='row'>
@@ -927,14 +1037,15 @@
           <div class='row'>
             <div class='lvdp-tab pull-right'>
               <a class='lvdp-fill-div' href='atelier-degustation-domicile.html'></a>
-              Sur mesure
-            </div>
-            <div class='lvdp-tab lvdp-tab-active pull-right'>
-              Un calendrier
+              <a href='atelier-degustation-domicile.html'>
+                Sur mesure
+              </a>
             </div>
             <div class='lvdp-tab pull-right'>
               <a class='lvdp-fill-div' href='ateliers-degustation-vin.html'></a>
-              Une philosophie
+              <a href='ateliers-degustation-vin.html'>
+                Une philosophie
+              </a>
             </div>
           </div>
           <div class='row lvdp-content' role='main'>
@@ -1029,57 +1140,63 @@
                 </li>
               </ul>
               <img class='pull-right' src='img/page-icon-calendrier.png' />
-              <img class='hidden-xs lvdp-cross' src='img/cross.png' />
-              <img class='lvdp-ribbon' src='img/ribbon.png' />
             </div>
           </div>
+          <img class='hidden-xs lvdp-cross' src='img/cross.png' />
+          <img class='lvdp-ribbon' src='img/ribbon.png' />
         </div>
       </div>
       <div class='row lvdp-vspace'></div>
+      <nav class='container lvdp-nav' role='navigation'>
+        <div class='row'>
+          <div class='col-xs-1 hidden-xs lvdp-logo'>
+            <a href='pauline.html'>
+              <img class='lvdp-logo-offset' src='img/logo.png' />
+            </a>
+            &nbsp;
+          </div>
+          <div class='col-sm-1 hidden-xs lvdp-nav-item'>
+            &nbsp;
+          </div>
+          <div class='col-sm-2 lvdp-nav-item'>
+            <a class='lvdp-fill-div' href='formations.html'></a>
+            <a href='formations.html'>Formations</a>
+          </div>
+          <div class='col-sm-2 lvdp-nav-item'>
+            <a class='lvdp-fill-div' href='animations.html'></a>
+            <a href='animations.html'>Animations</a>
+          </div>
+          <div class='col-sm-2 lvdp-nav-item lvdp-nav-active'>
+            <a class='lvdp-fill-div' href='ateliers.html'></a>
+            <a href='ateliers.html'>Ateliers</a>
+          </div>
+          <div class='col-sm-2 lvdp-nav-item'>
+            <a class='lvdp-fill-div' href='ventes.html'></a>
+            <a href='ventes.html'>Ventes</a>
+          </div>
+          <div class='col-sm-2 lvdp-nav-item'>
+            <a class='lvdp-fill-div' href='http://blog.lesvinsdepauline.fr' target='_blank'></a>
+            <a href='http://blog.lesvinsdepauline.fr' target='_blank'>Blog</a>
+          </div>
+        </div>
+      </nav>
     </div>
-    <nav class='container lvdp-nav' role='navigation'>
-      <div class='row'>
-        <div class='col-xs-1 hidden-xs lvdp-logo'>
-          <a href='pauline.html'>
-            <img class='lvdp-logo-offset' src='img/logo.png' />
-          </a>
-          &nbsp;
-        </div>
-        <div class='col-sm-1 hidden-xs lvdp-nav-item'>
-          &nbsp;
-        </div>
-        <div class='col-sm-2 lvdp-nav-item lvdp-nav-active'>
-          <a href='ateliers.html'>Ateliers</a>
-        </div>
-        <div class='col-sm-2 lvdp-nav-item'>
-          <a href='ventes.html'>Ventes</a>
-        </div>
-        <div class='col-sm-2 lvdp-nav-item'>
-          <a href='formations.html'>Formations</a>
-        </div>
-        <div class='col-sm-2 lvdp-nav-item'>
-          <a href='animations.html'>Animations</a>
-        </div>
-        <div class='col-sm-2 lvdp-nav-item'>
-          <a href='http://blog.lesvinsdepauline.fr' target='_blank'>Blog</a>
-        </div>
-      </div>
-    </nav>
     <div class='container lvdp-main-ateliers'>
       <div class='row lvdp-vspace'></div>
       <div class='row'>
         <div class='col-sm-offset-2 col-sm-9'>
           <div class='row'>
-            <div class='lvdp-tab lvdp-tab-active pull-right'>
-              Sur mesure
-            </div>
             <div class='lvdp-tab pull-right'>
               <a class='lvdp-fill-div' href='initiation-oenologie-lille.html'></a>
-              Un calendrier
+              <a href='initiation-oenologie-lille.html'>
+                Un calendrier
+              </a>
             </div>
             <div class='lvdp-tab pull-right'>
               <a class='lvdp-fill-div' href='ateliers-degustation-vin.html'></a>
-              Une philosophie
+              <a href='ateliers-degustation-vin.html'>
+                Une philosophie
+              </a>
             </div>
           </div>
           <div class='row lvdp-content' role='main'>
@@ -1090,42 +1207,47 @@
                 <a href='mailto:pauline@lesvinsdepauline.fr?subject=Atelier%20sur%20mesure'>Contactez-nous&nbsp;!</a>
               </p>
               <img class='pull-right' src='img/page-icon-sur-mesure.png' />
-              <img class='hidden-xs lvdp-cross' src='img/cross.png' />
-              <img class='lvdp-ribbon' src='img/ribbon.png' />
             </div>
           </div>
+          <img class='hidden-xs lvdp-cross' src='img/cross.png' />
+          <img class='lvdp-ribbon' src='img/ribbon.png' />
         </div>
       </div>
       <div class='row lvdp-vspace'></div>
+      <nav class='container lvdp-nav' role='navigation'>
+        <div class='row'>
+          <div class='col-xs-1 hidden-xs lvdp-logo'>
+            <a href='pauline.html'>
+              <img class='lvdp-logo-offset' src='img/logo.png' />
+            </a>
+            &nbsp;
+          </div>
+          <div class='col-sm-1 hidden-xs lvdp-nav-item'>
+            &nbsp;
+          </div>
+          <div class='col-sm-2 lvdp-nav-item lvdp-nav-active'>
+            <a class='lvdp-fill-div' href='formations.html'></a>
+            <a href='formations.html'>Formations</a>
+          </div>
+          <div class='col-sm-2 lvdp-nav-item'>
+            <a class='lvdp-fill-div' href='animations.html'></a>
+            <a href='animations.html'>Animations</a>
+          </div>
+          <div class='col-sm-2 lvdp-nav-item'>
+            <a class='lvdp-fill-div' href='ateliers.html'></a>
+            <a href='ateliers.html'>Ateliers</a>
+          </div>
+          <div class='col-sm-2 lvdp-nav-item'>
+            <a class='lvdp-fill-div' href='ventes.html'></a>
+            <a href='ventes.html'>Ventes</a>
+          </div>
+          <div class='col-sm-2 lvdp-nav-item'>
+            <a class='lvdp-fill-div' href='http://blog.lesvinsdepauline.fr' target='_blank'></a>
+            <a href='http://blog.lesvinsdepauline.fr' target='_blank'>Blog</a>
+          </div>
+        </div>
+      </nav>
     </div>
-    <nav class='container lvdp-nav' role='navigation'>
-      <div class='row'>
-        <div class='col-xs-1 hidden-xs lvdp-logo'>
-          <a href='pauline.html'>
-            <img class='lvdp-logo-offset' src='img/logo.png' />
-          </a>
-          &nbsp;
-        </div>
-        <div class='col-sm-1 hidden-xs lvdp-nav-item'>
-          &nbsp;
-        </div>
-        <div class='col-sm-2 lvdp-nav-item'>
-          <a href='ateliers.html'>Ateliers</a>
-        </div>
-        <div class='col-sm-2 lvdp-nav-item'>
-          <a href='ventes.html'>Ventes</a>
-        </div>
-        <div class='col-sm-2 lvdp-nav-item lvdp-nav-active'>
-          <a href='formations.html'>Formations</a>
-        </div>
-        <div class='col-sm-2 lvdp-nav-item'>
-          <a href='animations.html'>Animations</a>
-        </div>
-        <div class='col-sm-2 lvdp-nav-item'>
-          <a href='http://blog.lesvinsdepauline.fr' target='_blank'>Blog</a>
-        </div>
-      </div>
-    </nav>
     <div class='container lvdp-main-formations'>
       <div class='row lvdp-vspace'></div>
       <div class='row'>
@@ -1133,14 +1255,15 @@
           <div class='row'>
             <div class='lvdp-tab pull-right'>
               <a class='lvdp-fill-div' href='formation-oenologie-references.html'></a>
-              Merci !
+              <a href='formation-oenologie-references.html'>
+                Merci !
+              </a>
             </div>
             <div class='lvdp-tab pull-right'>
               <a class='lvdp-fill-div' href='formation-oenologie-cadres.html'></a>
-              Pour les cadres d'entreprise
-            </div>
-            <div class='lvdp-tab lvdp-tab-active pull-right'>
-              Pour le C.H.R.
+              <a href='formation-oenologie-cadres.html'>
+                Pour les cadres d'entreprise
+              </a>
             </div>
           </div>
           <div class='row lvdp-content' role='main'>
@@ -1183,42 +1306,47 @@
                 </div>
               </div>
               <img class='pull-right' src='img/page-icon-cafe.png' />
-              <img class='hidden-xs lvdp-cross' src='img/cross.png' />
-              <img class='lvdp-ribbon' src='img/ribbon.png' />
             </div>
           </div>
+          <img class='hidden-xs lvdp-cross' src='img/cross.png' />
+          <img class='lvdp-ribbon' src='img/ribbon.png' />
         </div>
       </div>
       <div class='row lvdp-vspace'></div>
+      <nav class='container lvdp-nav' role='navigation'>
+        <div class='row'>
+          <div class='col-xs-1 hidden-xs lvdp-logo'>
+            <a href='pauline.html'>
+              <img class='lvdp-logo-offset' src='img/logo.png' />
+            </a>
+            &nbsp;
+          </div>
+          <div class='col-sm-1 hidden-xs lvdp-nav-item'>
+            &nbsp;
+          </div>
+          <div class='col-sm-2 lvdp-nav-item lvdp-nav-active'>
+            <a class='lvdp-fill-div' href='formations.html'></a>
+            <a href='formations.html'>Formations</a>
+          </div>
+          <div class='col-sm-2 lvdp-nav-item'>
+            <a class='lvdp-fill-div' href='animations.html'></a>
+            <a href='animations.html'>Animations</a>
+          </div>
+          <div class='col-sm-2 lvdp-nav-item'>
+            <a class='lvdp-fill-div' href='ateliers.html'></a>
+            <a href='ateliers.html'>Ateliers</a>
+          </div>
+          <div class='col-sm-2 lvdp-nav-item'>
+            <a class='lvdp-fill-div' href='ventes.html'></a>
+            <a href='ventes.html'>Ventes</a>
+          </div>
+          <div class='col-sm-2 lvdp-nav-item'>
+            <a class='lvdp-fill-div' href='http://blog.lesvinsdepauline.fr' target='_blank'></a>
+            <a href='http://blog.lesvinsdepauline.fr' target='_blank'>Blog</a>
+          </div>
+        </div>
+      </nav>
     </div>
-    <nav class='container lvdp-nav' role='navigation'>
-      <div class='row'>
-        <div class='col-xs-1 hidden-xs lvdp-logo'>
-          <a href='pauline.html'>
-            <img class='lvdp-logo-offset' src='img/logo.png' />
-          </a>
-          &nbsp;
-        </div>
-        <div class='col-sm-1 hidden-xs lvdp-nav-item'>
-          &nbsp;
-        </div>
-        <div class='col-sm-2 lvdp-nav-item'>
-          <a href='ateliers.html'>Ateliers</a>
-        </div>
-        <div class='col-sm-2 lvdp-nav-item'>
-          <a href='ventes.html'>Ventes</a>
-        </div>
-        <div class='col-sm-2 lvdp-nav-item lvdp-nav-active'>
-          <a href='formations.html'>Formations</a>
-        </div>
-        <div class='col-sm-2 lvdp-nav-item'>
-          <a href='animations.html'>Animations</a>
-        </div>
-        <div class='col-sm-2 lvdp-nav-item'>
-          <a href='http://blog.lesvinsdepauline.fr' target='_blank'>Blog</a>
-        </div>
-      </div>
-    </nav>
     <div class='container lvdp-main-formations'>
       <div class='row lvdp-vspace'></div>
       <div class='row'>
@@ -1226,14 +1354,15 @@
           <div class='row'>
             <div class='lvdp-tab pull-right'>
               <a class='lvdp-fill-div' href='formation-oenologie-references.html'></a>
-              Merci !
-            </div>
-            <div class='lvdp-tab lvdp-tab-active pull-right'>
-              Pour les cadres d'entreprise
+              <a href='formation-oenologie-references.html'>
+                Merci !
+              </a>
             </div>
             <div class='lvdp-tab pull-right'>
               <a class='lvdp-fill-div' href='formation-oenologie-chr.html'></a>
-              Pour le C.H.R.
+              <a href='formation-oenologie-chr.html'>
+                Pour le C.H.R.
+              </a>
             </div>
           </div>
           <div class='row lvdp-content' role='main'>
@@ -1278,74 +1407,100 @@
                 </div>
               </div>
               <img class='pull-right' src='img/page-icon-cadres.png' />
-              <img class='hidden-xs lvdp-cross' src='img/cross.png' />
-              <img class='lvdp-ribbon' src='img/ribbon.png' />
             </div>
           </div>
+          <img class='hidden-xs lvdp-cross' src='img/cross.png' />
+          <img class='lvdp-ribbon' src='img/ribbon.png' />
         </div>
       </div>
       <div class='row lvdp-vspace'></div>
+      <nav class='container lvdp-nav' role='navigation'>
+        <div class='row'>
+          <div class='col-xs-1 hidden-xs lvdp-logo'>
+            <a href='pauline.html'>
+              <img class='lvdp-logo-offset' src='img/logo.png' />
+            </a>
+            &nbsp;
+          </div>
+          <div class='col-sm-1 hidden-xs lvdp-nav-item'>
+            &nbsp;
+          </div>
+          <div class='col-sm-2 lvdp-nav-item lvdp-nav-active'>
+            <a class='lvdp-fill-div' href='formations.html'></a>
+            <a href='formations.html'>Formations</a>
+          </div>
+          <div class='col-sm-2 lvdp-nav-item'>
+            <a class='lvdp-fill-div' href='animations.html'></a>
+            <a href='animations.html'>Animations</a>
+          </div>
+          <div class='col-sm-2 lvdp-nav-item'>
+            <a class='lvdp-fill-div' href='ateliers.html'></a>
+            <a href='ateliers.html'>Ateliers</a>
+          </div>
+          <div class='col-sm-2 lvdp-nav-item'>
+            <a class='lvdp-fill-div' href='ventes.html'></a>
+            <a href='ventes.html'>Ventes</a>
+          </div>
+          <div class='col-sm-2 lvdp-nav-item'>
+            <a class='lvdp-fill-div' href='http://blog.lesvinsdepauline.fr' target='_blank'></a>
+            <a href='http://blog.lesvinsdepauline.fr' target='_blank'>Blog</a>
+          </div>
+        </div>
+      </nav>
     </div>
-    <nav class='container lvdp-nav' role='navigation'>
-      <div class='row'>
-        <div class='col-xs-1 hidden-xs lvdp-logo'>
-          <a href='pauline.html'>
-            <img class='lvdp-logo-offset' src='img/logo.png' />
-          </a>
-          &nbsp;
-        </div>
-        <div class='col-sm-1 hidden-xs lvdp-nav-item'>
-          &nbsp;
-        </div>
-        <div class='col-sm-2 lvdp-nav-item'>
-          <a href='ateliers.html'>Ateliers</a>
-        </div>
-        <div class='col-sm-2 lvdp-nav-item'>
-          <a href='ventes.html'>Ventes</a>
-        </div>
-        <div class='col-sm-2 lvdp-nav-item lvdp-nav-active'>
-          <a href='formations.html'>Formations</a>
-        </div>
-        <div class='col-sm-2 lvdp-nav-item'>
-          <a href='animations.html'>Animations</a>
-        </div>
-        <div class='col-sm-2 lvdp-nav-item'>
-          <a href='http://blog.lesvinsdepauline.fr' target='_blank'>Blog</a>
-        </div>
-      </div>
-    </nav>
     <div class='container lvdp-main-formations'>
       <div class='row lvdp-vspace'></div>
       <div class='row'>
         <div class='col-sm-offset-2 col-sm-9'>
           <div class='row'>
-            <div class='lvdp-tab lvdp-tab-active pull-right'>
-              Merci !
-            </div>
             <div class='lvdp-tab pull-right'>
               <a class='lvdp-fill-div' href='formation-oenologie-cadres.html'></a>
-              Pour les cadres d'entreprise
+              <a href='formation-oenologie-cadres.html'>
+                Pour les cadres d'entreprise
+              </a>
             </div>
             <div class='lvdp-tab pull-right'>
               <a class='lvdp-fill-div' href='formation-oenologie-chr.html'></a>
-              Pour le C.H.R.
+              <a href='formation-oenologie-chr.html'>
+                Pour le C.H.R.
+              </a>
             </div>
           </div>
           <div class='row lvdp-content' role='main'>
             <div class='col-sm-12 pull-left'>
               <h1>Merci&nbsp;!</h1>
-              <p>Ils nous ont fait confiance et ont choisi de se former aux Vins de Pauline&nbsp;:</p>
-              <ul>
-                <li>Les Salons Kennedy</li>
-                <li>Les domaines qui montent</li>
-                <li>Le chais</li>
-                <li>Terre de boissons</li>
-                <li>Le Vin qui danse</li>
-                <li>Le Couvent des Minimes</li>
-                <li>L'auberge du Vermont</li>
-                <li>Le Bloempot</li>
-                <li>...</li>
-              </ul>
+              <div class='row lvdp-merci'>
+                <div class='col-sm-4'>
+                  <p>
+                    <a href='http://www.salonskennedy.com/'>Les Salons Kennedy</a>
+                  </p>
+                  <p>
+                    <a href='http://www.lesdomainesquimontent.com/'>Les domaines qui montent</a>
+                  </p>
+                  <p>
+                    <a href='http://www.lechais.com/'>Le chais</a>
+                  </p>
+                </div>
+                <div class='col-sm-4'>
+                  <p>
+                    <a href='http://www.terredeboissons.com/'>Terre de boissons</a>
+                  </p>
+                  <p>
+                    <a href='http://www.vqd.fr/'>Le Vin qui danse</a>
+                  </p>
+                  <p>
+                    <a href='http://www.alliance-lille.com/'>Le Couvent des Minimes</a>
+                  </p>
+                </div>
+                <div class='col-sm-4'>
+                  <p>
+                    <a href='http://aubergeduvertmont.fr/'>L'auberge du Vert Mont</a>
+                  </p>
+                  <p>
+                    <a href='http://www.bloempot.fr/'>Le Bloempot</a>
+                  </p>
+                </div>
+              </div>
               <div class='lvdp-plus'>
                 <img src='img/cross-circled.png' />
                 <div class='lvdp-plus-box'>
@@ -1360,42 +1515,47 @@
                 </div>
               </div>
               <img class='pull-right' src='img/page-icon-coeur.png' />
-              <img class='hidden-xs lvdp-cross' src='img/cross.png' />
-              <img class='lvdp-ribbon' src='img/ribbon.png' />
             </div>
           </div>
+          <img class='hidden-xs lvdp-cross' src='img/cross.png' />
+          <img class='lvdp-ribbon' src='img/ribbon.png' />
         </div>
       </div>
       <div class='row lvdp-vspace'></div>
+      <nav class='container lvdp-nav' role='navigation'>
+        <div class='row'>
+          <div class='col-xs-1 hidden-xs lvdp-logo'>
+            <a href='pauline.html'>
+              <img class='lvdp-logo-offset' src='img/logo.png' />
+            </a>
+            &nbsp;
+          </div>
+          <div class='col-sm-1 hidden-xs lvdp-nav-item'>
+            &nbsp;
+          </div>
+          <div class='col-sm-2 lvdp-nav-item'>
+            <a class='lvdp-fill-div' href='formations.html'></a>
+            <a href='formations.html'>Formations</a>
+          </div>
+          <div class='col-sm-2 lvdp-nav-item'>
+            <a class='lvdp-fill-div' href='animations.html'></a>
+            <a href='animations.html'>Animations</a>
+          </div>
+          <div class='col-sm-2 lvdp-nav-item'>
+            <a class='lvdp-fill-div' href='ateliers.html'></a>
+            <a href='ateliers.html'>Ateliers</a>
+          </div>
+          <div class='col-sm-2 lvdp-nav-item'>
+            <a class='lvdp-fill-div' href='ventes.html'></a>
+            <a href='ventes.html'>Ventes</a>
+          </div>
+          <div class='col-sm-2 lvdp-nav-item'>
+            <a class='lvdp-fill-div' href='http://blog.lesvinsdepauline.fr' target='_blank'></a>
+            <a href='http://blog.lesvinsdepauline.fr' target='_blank'>Blog</a>
+          </div>
+        </div>
+      </nav>
     </div>
-    <nav class='container lvdp-nav' role='navigation'>
-      <div class='row'>
-        <div class='col-xs-1 hidden-xs lvdp-logo'>
-          <a href='pauline.html'>
-            <img class='lvdp-logo-offset' src='img/logo.png' />
-          </a>
-          &nbsp;
-        </div>
-        <div class='col-sm-1 hidden-xs lvdp-nav-item'>
-          &nbsp;
-        </div>
-        <div class='col-sm-2 lvdp-nav-item'>
-          <a href='ateliers.html'>Ateliers</a>
-        </div>
-        <div class='col-sm-2 lvdp-nav-item'>
-          <a href='ventes.html'>Ventes</a>
-        </div>
-        <div class='col-sm-2 lvdp-nav-item'>
-          <a href='formations.html'>Formations</a>
-        </div>
-        <div class='col-sm-2 lvdp-nav-item'>
-          <a href='animations.html'>Animations</a>
-        </div>
-        <div class='col-sm-2 lvdp-nav-item'>
-          <a href='http://blog.lesvinsdepauline.fr' target='_blank'>Blog</a>
-        </div>
-      </div>
-    </nav>
     <div class='container lvdp-main-pauline'>
       <div class='row lvdp-vspace'></div>
       <div class='row'>
@@ -1403,14 +1563,15 @@
           <div class='row'>
             <div class='lvdp-tab pull-right'>
               <a class='lvdp-fill-div' href='degustation-vin.html'></a>
-              Des ailes ?
+              <a href='degustation-vin.html'>
+                Des ailes ?
+              </a>
             </div>
             <div class='lvdp-tab pull-right'>
               <a class='lvdp-fill-div' href='oenologie.html'></a>
-              Des savoirs ?
-            </div>
-            <div class='lvdp-tab lvdp-tab-active pull-right'>
-              Des racines ?
+              <a href='oenologie.html'>
+                Des savoirs ?
+              </a>
             </div>
           </div>
           <div class='row lvdp-content' role='main'>
@@ -1422,42 +1583,47 @@
                 <strong>Parmi les missions de Pauline&nbsp;: vous faire découvrir pleinement ces crus uniques&nbsp;!</strong>
               </p>
               <img class='pull-right' src='img/page-icon-racines.png' />
-              <img class='hidden-xs lvdp-cross' src='img/cross.png' />
-              <img class='lvdp-ribbon' src='img/ribbon.png' />
             </div>
           </div>
+          <img class='hidden-xs lvdp-cross' src='img/cross.png' />
+          <img class='lvdp-ribbon' src='img/ribbon.png' />
         </div>
       </div>
       <div class='row lvdp-vspace'></div>
+      <nav class='container lvdp-nav' role='navigation'>
+        <div class='row'>
+          <div class='col-xs-1 hidden-xs lvdp-logo'>
+            <a href='pauline.html'>
+              <img class='lvdp-logo-offset' src='img/logo.png' />
+            </a>
+            &nbsp;
+          </div>
+          <div class='col-sm-1 hidden-xs lvdp-nav-item'>
+            &nbsp;
+          </div>
+          <div class='col-sm-2 lvdp-nav-item'>
+            <a class='lvdp-fill-div' href='formations.html'></a>
+            <a href='formations.html'>Formations</a>
+          </div>
+          <div class='col-sm-2 lvdp-nav-item'>
+            <a class='lvdp-fill-div' href='animations.html'></a>
+            <a href='animations.html'>Animations</a>
+          </div>
+          <div class='col-sm-2 lvdp-nav-item'>
+            <a class='lvdp-fill-div' href='ateliers.html'></a>
+            <a href='ateliers.html'>Ateliers</a>
+          </div>
+          <div class='col-sm-2 lvdp-nav-item'>
+            <a class='lvdp-fill-div' href='ventes.html'></a>
+            <a href='ventes.html'>Ventes</a>
+          </div>
+          <div class='col-sm-2 lvdp-nav-item'>
+            <a class='lvdp-fill-div' href='http://blog.lesvinsdepauline.fr' target='_blank'></a>
+            <a href='http://blog.lesvinsdepauline.fr' target='_blank'>Blog</a>
+          </div>
+        </div>
+      </nav>
     </div>
-    <nav class='container lvdp-nav' role='navigation'>
-      <div class='row'>
-        <div class='col-xs-1 hidden-xs lvdp-logo'>
-          <a href='pauline.html'>
-            <img class='lvdp-logo-offset' src='img/logo.png' />
-          </a>
-          &nbsp;
-        </div>
-        <div class='col-sm-1 hidden-xs lvdp-nav-item'>
-          &nbsp;
-        </div>
-        <div class='col-sm-2 lvdp-nav-item'>
-          <a href='ateliers.html'>Ateliers</a>
-        </div>
-        <div class='col-sm-2 lvdp-nav-item'>
-          <a href='ventes.html'>Ventes</a>
-        </div>
-        <div class='col-sm-2 lvdp-nav-item'>
-          <a href='formations.html'>Formations</a>
-        </div>
-        <div class='col-sm-2 lvdp-nav-item'>
-          <a href='animations.html'>Animations</a>
-        </div>
-        <div class='col-sm-2 lvdp-nav-item'>
-          <a href='http://blog.lesvinsdepauline.fr' target='_blank'>Blog</a>
-        </div>
-      </div>
-    </nav>
     <div class='container lvdp-main-pauline'>
       <div class='row lvdp-vspace'></div>
       <div class='row'>
@@ -1465,14 +1631,15 @@
           <div class='row'>
             <div class='lvdp-tab pull-right'>
               <a class='lvdp-fill-div' href='degustation-vin.html'></a>
-              Des ailes ?
-            </div>
-            <div class='lvdp-tab lvdp-tab-active pull-right'>
-              Des savoirs ?
+              <a href='degustation-vin.html'>
+                Des ailes ?
+              </a>
             </div>
             <div class='lvdp-tab pull-right'>
               <a class='lvdp-fill-div' href='vignes.html'></a>
-              Des racines ?
+              <a href='vignes.html'>
+                Des racines ?
+              </a>
             </div>
           </div>
           <div class='row lvdp-content' role='main'>
@@ -1491,57 +1658,63 @@
               </div>
               <img class='pull-left' src='img/signature-black.png' />
               <img class='pull-right' src='img/page-icon-savoirs.png' />
-              <img class='hidden-xs lvdp-cross' src='img/cross.png' />
-              <img class='lvdp-ribbon' src='img/ribbon.png' />
             </div>
           </div>
+          <img class='hidden-xs lvdp-cross' src='img/cross.png' />
+          <img class='lvdp-ribbon' src='img/ribbon.png' />
         </div>
       </div>
       <div class='row lvdp-vspace'></div>
+      <nav class='container lvdp-nav' role='navigation'>
+        <div class='row'>
+          <div class='col-xs-1 hidden-xs lvdp-logo'>
+            <a href='pauline.html'>
+              <img class='lvdp-logo-offset' src='img/logo.png' />
+            </a>
+            &nbsp;
+          </div>
+          <div class='col-sm-1 hidden-xs lvdp-nav-item'>
+            &nbsp;
+          </div>
+          <div class='col-sm-2 lvdp-nav-item'>
+            <a class='lvdp-fill-div' href='formations.html'></a>
+            <a href='formations.html'>Formations</a>
+          </div>
+          <div class='col-sm-2 lvdp-nav-item'>
+            <a class='lvdp-fill-div' href='animations.html'></a>
+            <a href='animations.html'>Animations</a>
+          </div>
+          <div class='col-sm-2 lvdp-nav-item'>
+            <a class='lvdp-fill-div' href='ateliers.html'></a>
+            <a href='ateliers.html'>Ateliers</a>
+          </div>
+          <div class='col-sm-2 lvdp-nav-item'>
+            <a class='lvdp-fill-div' href='ventes.html'></a>
+            <a href='ventes.html'>Ventes</a>
+          </div>
+          <div class='col-sm-2 lvdp-nav-item'>
+            <a class='lvdp-fill-div' href='http://blog.lesvinsdepauline.fr' target='_blank'></a>
+            <a href='http://blog.lesvinsdepauline.fr' target='_blank'>Blog</a>
+          </div>
+        </div>
+      </nav>
     </div>
-    <nav class='container lvdp-nav' role='navigation'>
-      <div class='row'>
-        <div class='col-xs-1 hidden-xs lvdp-logo'>
-          <a href='pauline.html'>
-            <img class='lvdp-logo-offset' src='img/logo.png' />
-          </a>
-          &nbsp;
-        </div>
-        <div class='col-sm-1 hidden-xs lvdp-nav-item'>
-          &nbsp;
-        </div>
-        <div class='col-sm-2 lvdp-nav-item'>
-          <a href='ateliers.html'>Ateliers</a>
-        </div>
-        <div class='col-sm-2 lvdp-nav-item'>
-          <a href='ventes.html'>Ventes</a>
-        </div>
-        <div class='col-sm-2 lvdp-nav-item'>
-          <a href='formations.html'>Formations</a>
-        </div>
-        <div class='col-sm-2 lvdp-nav-item'>
-          <a href='animations.html'>Animations</a>
-        </div>
-        <div class='col-sm-2 lvdp-nav-item'>
-          <a href='http://blog.lesvinsdepauline.fr' target='_blank'>Blog</a>
-        </div>
-      </div>
-    </nav>
     <div class='container lvdp-main-pauline'>
       <div class='row lvdp-vspace'></div>
       <div class='row'>
         <div class='col-sm-offset-2 col-sm-9'>
           <div class='row'>
-            <div class='lvdp-tab lvdp-tab-active pull-right'>
-              Des ailes ?
-            </div>
             <div class='lvdp-tab pull-right'>
               <a class='lvdp-fill-div' href='oenologie.html'></a>
-              Des savoirs ?
+              <a href='oenologie.html'>
+                Des savoirs ?
+              </a>
             </div>
             <div class='lvdp-tab pull-right'>
               <a class='lvdp-fill-div' href='vignes.html'></a>
-              Des racines ?
+              <a href='vignes.html'>
+                Des racines ?
+              </a>
             </div>
           </div>
           <div class='row lvdp-content' role='main'>
@@ -1549,10 +1722,10 @@
               <h1>Des ailes&nbsp;?</h1>
               <p>Sur ces terres, il est permis de prendre de la hauteur. Soumettez vos problématiques, exprimez vos projets et vos envies...</p>
               <img class='pull-right' src='img/page-icon-ailes.png' />
-              <img class='hidden-xs lvdp-cross' src='img/cross.png' />
-              <img class='lvdp-ribbon' src='img/ribbon.png' />
             </div>
           </div>
+          <img class='hidden-xs lvdp-cross' src='img/cross.png' />
+          <img class='lvdp-ribbon' src='img/ribbon.png' />
         </div>
       </div>
       <div class='row lvdp-vspace'></div>
@@ -1562,16 +1735,16 @@
             <a href='http://www.facebook.com/les.vins.de.pauline' target='_blank'>
               <img src='img/icon-facebook.png' />
             </a>
-            <a href='mailto:pauline@lesvinsdepauline.fr'>
+            <a href='#contact'>
               <img src='img/icon-contact.png' />
             </a>
-            <a href='#TODO'>
+            <a href='#credits'>
               <img src='img/icon-like.png' />
             </a>
-            <a href='#TODO'>
+            <a href='#legal'>
               <img src='img/icon-legal.png' />
             </a>
-            <a href='#TODO'>
+            <a href='#sitemap'>
               <img src='img/icon-sitemap.png' />
             </a>
           </aside>
@@ -1580,7 +1753,151 @@
     </div>
     <footer class='container lvdp-footer'>
       <div class='row'>
-        <p>L’ABUS D’ALCOOL EST DANGEREUX, À CONSOMMER AVEC MODÉRATION.</p>
+        <div class='col-sm-12'>
+          <p class='lvdp-abus'>L’ABUS D’ALCOOL EST DANGEREUX, À CONSOMMER AVEC MODÉRATION.</p>
+        </div>
+      </div>
+      <div class='lvdp-footer-divider'></div>
+      <div class='row'>
+        <div class='col-sm-4'>
+          <a name='contact'>
+            <img class='lvdp-footer-icon' src='img/icon-contact-inv.png' />
+          </a>
+          <div class='lvdp-footer-text'>
+            <h2>Les Vins de Pauline</h2>
+            <p>
+              9 bis, rue Bergot 59000&nbsp;Lille
+              <a href='mailto:pauline@lesvinsdepauline.fr'>
+                pauline@lesvinsdepauline.fr
+              </a>
+            </p>
+          </div>
+        </div>
+        <div class='col-sm-8'>
+          <a name='credits'>
+            <img class='lvdp-footer-icon' src='img/icon-like-inv.png' />
+          </a>
+          <div class='lvdp-footer-text'>
+            <h2>Merci !</h2>
+            <p>consentium aribusciunti sum quos sunt enda prerfer natestrument eume qui a possitas eos eatur autem et ut quatque pro et lab inus.</p>
+            <p>At et fuga. Ut aspis qui cus unto volorep editatur aut maio ommolup icipsam.</p>
+          </div>
+        </div>
+      </div>
+      <div class='lvdp-footer-divider'></div>
+      <div class='row'>
+        <div class='col-sm-12'>
+          <a name='legal'>
+            <img class='lvdp-footer-icon' src='img/icon-legal-inv.png' />
+          </a>
+          <div class='lvdp-footer-text'>
+            <h2>Mentions légales</h2>
+            <p>Apit, ut iunt parchilis nectiatis eumquam quia essit doluptati tet quam non con rehenis doluptaquam, verum re mo quam, si dolut as reperupta ne ra vidicat ibusdaectur a si accuptate magnam, ut assimi, te intur? Sunt ommo videstota aspe es eture assimol uptatur alignimin con nimet mi, optiam sim nihilluptae peritas denditiae doluptatis dollace sendandandae soloriam qui consentium aribusciunti sum quos sunt enda prerfer natestrument eume qui a possitas eos eatur autem et ut quatque pro et lab inus.</p>
+            <p>At et fuga. Ut aspis qui cus unto volorep editatur aut maio ommolup icipsam.</p>
+            <p>Apit, ut iunt parchilis nectiatis eumquam quia essit doluptati tet quam non con rehenis doluptaquam, verum re mo quam, si dolut as reperupta ne ra vidicat ibusdaectur a si accuptate magnam, ut assimi, te intur? Sunt ommo videstota aspe es eture assimol uptatur alignimin con nimet mi, optiam sim nihilluptae peritas denditiae doluptatis dollace At et sendandandae soloriam qui.</p>
+          </div>
+        </div>
+      </div>
+      <div class='lvdp-footer-divider'></div>
+      <div class='row'>
+        <div class='col-sm-12'>
+          <a name='sitemap'>
+            <img class='lvdp-footer-icon' src='img/icon-legal-inv.png' />
+          </a>
+          <div class='lvdp-footer-text'>
+            <h2>Plan du site</h2>
+            <ul>
+              <li>
+                <a href='formations.html'>
+                  Formations
+                </a>
+                <ul>
+                  <li>
+                    <a href='formation-oenologie-chr.html'>
+                      Pour le C.H.R.
+                    </a>
+                  </li>
+                  <li>
+                    <a href='formation-oenologie-cadres.html'>
+                      Pour les cadres d'entreprise
+                    </a>
+                  </li>
+                  <li>
+                    <a href='formation-oenologie-references.html'>
+                      Merci !
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href='animations.html'>
+                  Animations
+                </a>
+                <ul>
+                  <li>
+                    <a href='animation-oenologie-entreprise.html'>
+                      Une Philosophie
+                    </a>
+                  </li>
+                  <li>
+                    <a href='evenement-degustation-vin-entreprise.html'>
+                      Des organisations
+                    </a>
+                  </li>
+                  <li>
+                    <a href='evenement-entreprise-references.html'>
+                      Merci !
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href='ateliers.html'>
+                  Ateliers
+                </a>
+                <ul>
+                  <li>
+                    <a href='ateliers-degustation-vin.html'>
+                      Une philosophie
+                    </a>
+                  </li>
+                  <li>
+                    <a href='initiation-oenologie-lille.html'>
+                      Un calendrier
+                    </a>
+                  </li>
+                  <li>
+                    <a href='atelier-degustation-domicile.html'>
+                      Sur mesure
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href='ventes.html'>
+                  Ventes
+                </a>
+                <ul>
+                  <li>
+                    <a href='bons-plans-vin.html'>
+                      Nos ventes privées
+                    </a>
+                  </li>
+                  <li>
+                    <a href='vente-privee-vin.html'>
+                      Calendrier
+                    </a>
+                  </li>
+                  <li>
+                    <a href='vente-vin-domicile.html'>
+                      Organiser une vente
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </footer>
     <script src='https://code.jquery.com/jquery-1.10.2.min.js'></script>
@@ -1592,6 +1909,110 @@
       })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
       ga('create', 'UA-18492930-1', 'lesvinsdepauline.fr');
       ga('send', 'pageview');
+    </script>
+    <script src='js/perfect-scrollbar-0.4.8.with-mousewheel.min.js'></script>
+    <script type='text/javascript'>
+      //<![CDATA[
+        //TODO refactor
+        var tilesMargin = $(window).height()-207-100-$('.lvdp-tile-container').height()-100-38;
+        $('.lvdp-tile-container').css('margin-top', tilesMargin/2).css('margin-bottom', tilesMargin/2);
+        $(window).resize(function() {
+            var tilesMargin = $(window).height()-207-100-$('.lvdp-tile-container').height()-100-38;
+            $('.lvdp-tile-container').css('margin-top', tilesMargin/2).css('margin-bottom', tilesMargin/2);
+        });
+        
+        var contentHeight = $(window).height()-207-100-40-100-38;
+        contentHeight = Math.max(contentHeight, 300);
+        $('.lvdp-content').height(contentHeight).css('overflow', 'hidden').perfectScrollbar();
+        $(window).resize(function() {
+            var contentHeight = $(window).height()-207-100-40-100-38;
+            contentHeight = Math.max(contentHeight, 300);
+            $('.lvdp-content').height(contentHeight).perfectScrollbar('update');
+        });
+        
+        $('.lvdp-pratique-box-expanded')
+            .mouseenter(function() {
+                $('.lvdp-pratique-box-expanded').appendTo($('.lvdp-content').parent());
+                $('.lvdp-pratique-box-expanded').css("top",
+                    0
+                    +$('.lvdp-pratique').offset().top
+                    -$('.lvdp-content').parent().offset().top
+                    +25
+                    );
+                $('.lvdp-pratique-box-expanded').css("right",
+                    0
+                    +$('.lvdp-pratique').offset().left
+                    -$('.lvdp-content').parent().offset().left
+                    +76
+                    );
+            })
+            .mouseleave(function() {
+                $('.lvdp-pratique-box-expanded').appendTo($('.lvdp-pratique-box'));
+            });
+        $('.lvdp-pratique')
+            .mouseenter(function() {
+                $('.lvdp-pratique-box-expanded').appendTo($('.lvdp-content').parent());
+                $('.lvdp-pratique-box-expanded').css("top",
+                    0
+                    +$('.lvdp-pratique').offset().top
+                    -$('.lvdp-content').parent().offset().top
+                    +25
+                    );
+                $('.lvdp-pratique-box-expanded').css("right",
+                    0
+                    +$('.lvdp-pratique').offset().left
+                    -$('.lvdp-content').parent().offset().left
+                    +76
+                    );
+                $('.lvdp-pratique-box-expanded').css("display", "none");
+                $('.lvdp-pratique-box-expanded').fadeIn();
+            })
+            .mouseleave(function() {
+                $('.lvdp-pratique-box-expanded').appendTo($('.lvdp-pratique-box'));
+            });
+        var onPlus = 0;
+        $('.lvdp-plus')
+            .mouseenter(function() {
+                $('.lvdp-plus-box-expanded').appendTo($('.lvdp-content').parent());
+                $('.lvdp-plus-box-expanded').css("top",
+                    0
+                    +$('.lvdp-plus').offset().top
+                    -$('.lvdp-content').parent().offset().top
+                    +25
+                    );
+                $('.lvdp-plus-box-expanded').css("left",
+                    0
+                    +$('.lvdp-plus').offset().left
+                    -$('.lvdp-content').parent().offset().left
+                    +28
+                    );
+                $('.lvdp-plus-box-expanded').css("display", "none");
+                $('.lvdp-plus-box-expanded').fadeIn();
+            })
+            .mouseleave(function() {
+                $('.lvdp-plus-box-expanded').appendTo($('.lvdp-plus-box'));
+            });
+        $('.lvdp-plus-box-expanded')
+            .mouseenter(function() {
+                $('.lvdp-plus-box-expanded').appendTo($('.lvdp-content').parent());
+                $('.lvdp-plus-box-expanded').css("top",
+                    0
+                    +$('.lvdp-plus').offset().top
+                    -$('.lvdp-content').parent().offset().top
+                    +25
+                    );
+                $('.lvdp-plus-box-expanded').css("left",
+                    0
+                    +$('.lvdp-plus').offset().left
+                    -$('.lvdp-content').parent().offset().left
+                    +28
+                    );
+            })
+            .mouseleave(function() {
+                $('.lvdp-plus-box-expanded').appendTo($('.lvdp-plus-box'));
+            })
+            ;
+      //]]>
     </script>
   </body>
 </html>
