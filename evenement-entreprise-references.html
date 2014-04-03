@@ -32,14 +32,14 @@
             </a>
             &nbsp;
           </div>
-          <div class='col-sm-1 hidden-xs lvdp-nav-item'>
+          <div class='col-sm-1 visible-sm lvdp-nav-item'>
             &nbsp;
           </div>
-          <div class='col-sm-2 lvdp-nav-item'>
+          <div class='col-sm-3 lvdp-nav-item'>
             <a class='lvdp-fill-div' href='formations.html'></a>
             <a href='formations.html'>Formations</a>
           </div>
-          <div class='col-sm-2 lvdp-nav-item lvdp-nav-active'>
+          <div class='col-md-2 col-sm-2 lvdp-nav-item lvdp-nav-active'>
             <a class='lvdp-fill-div' href='animations.html'></a>
             <a href='animations.html'>Animations</a>
           </div>
@@ -62,7 +62,7 @@
       <div class='row lvdp-vspace'></div>
       <div class='row'>
         <div class='col-sm-offset-2 col-sm-9'>
-          <div class='row'>
+          <div class='row lvdp-content-tab'>
             <div class='lvdp-tab pull-right'>
               <a class='lvdp-fill-div' href='evenement-degustation-vin-entreprise.html'></a>
               <a href='evenement-degustation-vin-entreprise.html'>
@@ -76,56 +76,59 @@
               </a>
             </div>
           </div>
+          <a class='lvdp-close' href='animations.html'>
+            <img src='img/close.png' />
+          </a>
           <div class='row lvdp-content' role='main'>
             <div class='col-sm-12 pull-left'>
               <h1>Merci&nbsp;!</h1>
               <div class='row lvdp-merci'>
                 <div class='col-sm-4'>
                   <p>
-                    <a href='http://www.vilogia.fr/'>Vilogia</a>
+                    <a href='http://www.vilogia.fr/' target='_blank'>Vilogia</a>
                   </p>
                   <p>
-                    <a href='https://www.caisse-epargne.fr/particuliers/nord-france-europe/accueil.aspx'>Caisse d'Épargne Nord France Europe</a>
+                    <a href='https://www.caisse-epargne.fr/particuliers/nord-france-europe/accueil.aspx' target='_blank'>Caisse d'Épargne Nord France Europe</a>
                   </p>
                   <p>
-                    <a href='http://onamarchesurlalune.com/'>On a marché sur la Lune</a>
+                    <a href='http://onamarchesurlalune.com/' target='_blank'>On a marché sur la Lune</a>
                   </p>
                   <p>
-                    <a href='http://www.arjohuntleigh.com/'>Artjo Huntleigh</a>
+                    <a href='http://www.arjohuntleigh.com/' target='_blank'>Artjo Huntleigh</a>
                   </p>
                   <p>
-                    <a href='http://www.amphitryon.fr/'>Les jardins de l'amphitryon</a>
-                  </p>
-                </div>
-                <div class='col-sm-4'>
-                  <p>
-                    <a href='http://www.salonskennedy.com/'>Les salons Kennedy</a>
-                  </p>
-                  <p>
-                    <a href='http://www.axa.fr/'>Axa Assurances</a>
-                  </p>
-                  <p>
-                    <a href='http://imagesetlegendes.com/'>Images et Légendes</a>
-                  </p>
-                  <p>
-                    <a href='http://www.lionsclubs.org/'>Lion's Club</a>
-                  </p>
-                  <p>
-                    <a href='http://www.cerib.com/'>Le Cerib</a>
+                    <a href='http://www.amphitryon.fr/' target='_blank'>Les jardins de l'amphitryon</a>
                   </p>
                 </div>
                 <div class='col-sm-4'>
                   <p>
-                    <a href='http://www.erdf.fr/'>ERDF</a>
+                    <a href='http://www.salonskennedy.com/' target='_blank'>Les salons Kennedy</a>
                   </p>
                   <p>
-                    <a href='http://www.zodio.fr/'>Zodio</a>
+                    <a href='http://www.axa.fr/' target='_blank'>Axa Assurances</a>
                   </p>
                   <p>
-                    <a href='http://contre-champs.fr/'>Contrechamps</a>
+                    <a href='http://imagesetlegendes.com/' target='_blank'>Images et Légendes</a>
                   </p>
                   <p>
-                    <a href='http://clubfourtyone.com/'>Club 41</a>
+                    <a href='http://www.lionsclubs.org/' target='_blank'>Lion's Club</a>
+                  </p>
+                  <p>
+                    <a href='http://www.cerib.com/' target='_blank'>Le Cerib</a>
+                  </p>
+                </div>
+                <div class='col-sm-4'>
+                  <p>
+                    <a href='http://www.erdf.fr/' target='_blank'>ERDF</a>
+                  </p>
+                  <p>
+                    <a href='http://www.zodio.fr/' target='_blank'>Zodio</a>
+                  </p>
+                  <p>
+                    <a href='http://contre-champs.fr/' target='_blank'>Contrechamps</a>
+                  </p>
+                  <p>
+                    <a href='http://clubfourtyone.com/' target='_blank'>Club 41</a>
                   </p>
                 </div>
               </div>
@@ -335,105 +338,50 @@
     <script src='js/perfect-scrollbar-0.4.8.with-mousewheel.min.js'></script>
     <script type='text/javascript'>
       //<![CDATA[
-        //TODO refactor
-        var tilesMargin = $(window).height()-207-100-$('.lvdp-tile-container').height()-100-38;
-        $('.lvdp-tile-container').css('margin-top', tilesMargin/2).css('margin-bottom', tilesMargin/2);
-        $(window).resize(function() {
-            var tilesMargin = $(window).height()-207-100-$('.lvdp-tile-container').height()-100-38;
-            $('.lvdp-tile-container').css('margin-top', tilesMargin/2).css('margin-bottom', tilesMargin/2);
-        });
+        function setContentHeight() {
+            var windowHeight = $(window).height();
+            var headerHeight = 207;
+            var vspaceHeight = 100;
+            var tabHeight = $('.lvdp-content-tab').height();
+            var footerHeight = 38;
+            var availableHeight = windowHeight
+                -headerHeight
+                -vspaceHeight
+                -tabHeight
+                -vspaceHeight
+                -footerHeight;
+            var minContentHeight = 300;
+            availableHeight = Math.max(minContentHeight, availableHeight);
+            $('.lvdp-content').css('max-height', availableHeight).css('overflow', 'hidden').perfectScrollbar();
+            var actualHeight = $('.lvdp-content, .lvdp-tile-container').height();
+            var fillMargin = availableHeight - actualHeight;
+            $('.lvdp-vspace').css('margin-top', fillMargin/2);
+        }
+        $(window).resize(setContentHeight);
+        setContentHeight();
         
-        var contentHeight = $(window).height()-207-100-40-100-38;
-        contentHeight = Math.max(contentHeight, 300);
-        $('.lvdp-content').height(contentHeight).css('overflow', 'hidden').perfectScrollbar();
-        $(window).resize(function() {
-            var contentHeight = $(window).height()-207-100-40-100-38;
-            contentHeight = Math.max(contentHeight, 300);
-            $('.lvdp-content').height(contentHeight).perfectScrollbar('update');
-        });
+        function setUpHoverBox(element, box, direction, offset) {
+            $('.lvdp-'+box+element)
+                .mouseenter(function() {
+                    var boxOffset = $('.lvdp-'+box+'').offset();
+                    var parentOffset = $('.lvdp-content').parent().offset();
+                    var offscreenOffset = Math.max(0,
+                        boxOffset.top + 30 + $('.lvdp-'+box+'-box-expanded').height()
+                        - $(window).height());
+                    $('.lvdp-'+box+'-box-expanded')
+                        .appendTo($('.lvdp-content').parent())
+                        .css("top", boxOffset.top - parentOffset.top + 25 - offscreenOffset)
+                        .css(direction, boxOffset.left - parentOffset.left + offset);
         
-        $('.lvdp-pratique-box-expanded')
-            .mouseenter(function() {
-                $('.lvdp-pratique-box-expanded').appendTo($('.lvdp-content').parent());
-                $('.lvdp-pratique-box-expanded').css("top",
-                    0
-                    +$('.lvdp-pratique').offset().top
-                    -$('.lvdp-content').parent().offset().top
-                    +25
-                    );
-                $('.lvdp-pratique-box-expanded').css("right",
-                    0
-                    +$('.lvdp-pratique').offset().left
-                    -$('.lvdp-content').parent().offset().left
-                    +76
-                    );
-            })
-            .mouseleave(function() {
-                $('.lvdp-pratique-box-expanded').appendTo($('.lvdp-pratique-box'));
-            });
-        $('.lvdp-pratique')
-            .mouseenter(function() {
-                $('.lvdp-pratique-box-expanded').appendTo($('.lvdp-content').parent());
-                $('.lvdp-pratique-box-expanded').css("top",
-                    0
-                    +$('.lvdp-pratique').offset().top
-                    -$('.lvdp-content').parent().offset().top
-                    +25
-                    );
-                $('.lvdp-pratique-box-expanded').css("right",
-                    0
-                    +$('.lvdp-pratique').offset().left
-                    -$('.lvdp-content').parent().offset().left
-                    +76
-                    );
-                $('.lvdp-pratique-box-expanded').css("display", "none");
-                $('.lvdp-pratique-box-expanded').fadeIn();
-            })
-            .mouseleave(function() {
-                $('.lvdp-pratique-box-expanded').appendTo($('.lvdp-pratique-box'));
-            });
-        var onPlus = 0;
-        $('.lvdp-plus')
-            .mouseenter(function() {
-                $('.lvdp-plus-box-expanded').appendTo($('.lvdp-content').parent());
-                $('.lvdp-plus-box-expanded').css("top",
-                    0
-                    +$('.lvdp-plus').offset().top
-                    -$('.lvdp-content').parent().offset().top
-                    +25
-                    );
-                $('.lvdp-plus-box-expanded').css("left",
-                    0
-                    +$('.lvdp-plus').offset().left
-                    -$('.lvdp-content').parent().offset().left
-                    +28
-                    );
-                $('.lvdp-plus-box-expanded').css("display", "none");
-                $('.lvdp-plus-box-expanded').fadeIn();
-            })
-            .mouseleave(function() {
-                $('.lvdp-plus-box-expanded').appendTo($('.lvdp-plus-box'));
-            });
-        $('.lvdp-plus-box-expanded')
-            .mouseenter(function() {
-                $('.lvdp-plus-box-expanded').appendTo($('.lvdp-content').parent());
-                $('.lvdp-plus-box-expanded').css("top",
-                    0
-                    +$('.lvdp-plus').offset().top
-                    -$('.lvdp-content').parent().offset().top
-                    +25
-                    );
-                $('.lvdp-plus-box-expanded').css("left",
-                    0
-                    +$('.lvdp-plus').offset().left
-                    -$('.lvdp-content').parent().offset().left
-                    +28
-                    );
-            })
-            .mouseleave(function() {
-                $('.lvdp-plus-box-expanded').appendTo($('.lvdp-plus-box'));
-            })
-            ;
+                })
+                .mouseleave(function() {
+                    $('.lvdp-'+box+'-box-expanded').appendTo($('.lvdp-'+box+'-box'));
+                });
+        }
+        setUpHoverBox('', 'pratique', "right", 76);
+        setUpHoverBox('-box-expanded', 'pratique', "right", 76);
+        setUpHoverBox('', 'plus', "left", 28);
+        setUpHoverBox('-box-expanded', 'plus', "left", 28);
       //]]>
     </script>
   </body>

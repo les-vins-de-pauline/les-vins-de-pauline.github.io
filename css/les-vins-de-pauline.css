@@ -75,7 +75,14 @@ a {
 .lvdp-tagline-front {
     position:absolute;
     top: 12px;
+    left: 12px;
+    max-width: 80%;
+}
+
+@media screen and (min-width: 768px) {
+.lvdp-tagline-front {
     left: 50px;
+}
 }
 
 .lvdp-tagline-back {
@@ -132,13 +139,13 @@ a {
 
 .lvdp-nav-active {
     background: #be0185; /* Old browsers */
-    background: -moz-linear-gradient(left, #8e0061 0%, #be0185 10%, #be0185 50%, #be0185 90%, #8e0061 100%); /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, right top, color-stop(0%,#8e0061), color-stop(10%,#be0185), color-stop(50%,#be0185), color-stop(90%,#be0185), color-stop(100%,#8e0061)); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(left, #8e0061 0%,#be0185 10%,#be0185 50%,#be0185 90%,#8e0061 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(left, #8e0061 0%,#be0185 10%,#be0185 50%,#be0185 90%,#8e0061 100%); /* Opera 11.10+ */
-    background: -ms-linear-gradient(left, #8e0061 0%,#be0185 10%,#be0185 50%,#be0185 90%,#8e0061 100%); /* IE10+ */
-    background: linear-gradient(to right, #8e0061 0%,#be0185 10%,#be0185 50%,#be0185 90%,#8e0061 100%); /* W3C */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8e0061', endColorstr='#8e0061',GradientType=1 ); /* IE6-9 */
+    background: -moz-linear-gradient(top, #8e0061 0%, #be0185 20%, #be0185 50%, #be0185 80%, #8e0061 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#8e0061), color-stop(20%,#be0185), color-stop(50%,#be0185), color-stop(80%,#be0185), color-stop(100%,#8e0061)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #8e0061 0%,#be0185 20%,#be0185 50%,#be0185 80%,#8e0061 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #8e0061 0%,#be0185 20%,#be0185 50%,#be0185 80%,#8e0061 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #8e0061 0%,#be0185 20%,#be0185 50%,#be0185 80%,#8e0061 100%); /* IE10+ */
+    background: linear-gradient(to bottom, #8e0061 0%,#be0185 20%,#be0185 50%,#be0185 80%,#8e0061 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8e0061', endColorstr='#8e0061',GradientType=0 ); /* IE6-9 */
 }
 
 .lvdp-nav-active a {
@@ -151,6 +158,80 @@ a {
 
 .lvdp-vspace {
     height: 100px;
+}
+
+.lvdp-main-pauline {
+    overflow: hidden;
+    position: relative;
+}
+.lvdp-home-animation {
+    background: white;
+    position:absolute;
+    height: 100%;
+    width: 100%;
+    margin-left: 100%;
+    z-index: 50;
+}
+
+.lvdp-home-animation-bg {
+    background: url('../img/grappe.png') no-repeat;
+    width: 247px;
+    height: 260px;
+    margin: auto;
+    position: relative;
+}
+
+.lvdp-home-animation-raisin {
+    background: url('../img/raisin.png') no-repeat;
+    //background-size: 100%;
+    //background-position: -10% -10%;
+    width: 52px;
+    height: 56px;
+    position:absolute;
+    opacity: 0;
+}
+.lvdp-home-animation-raisin-1  { bottom: -11px; left: 98px; }
+
+.lvdp-home-animation-raisin-2  { bottom:  32px; left: 64px; }
+.lvdp-home-animation-raisin-3  { bottom:  32px; left: 131px; }
+
+.lvdp-home-animation-raisin-4  { bottom:  74px; left: 30px; }
+.lvdp-home-animation-raisin-5  { bottom:  74px; left: 97px; }
+.lvdp-home-animation-raisin-6  { bottom:  74px; left: 164px; }
+
+.lvdp-home-animation-raisin-7  { bottom:  117px; left: -3px; }
+.lvdp-home-animation-raisin-8  { bottom:  117px; left: 64px; }
+.lvdp-home-animation-raisin-9  { bottom:  117px; left: 131px; }
+.lvdp-home-animation-raisin-10 { bottom:  117px; left: 198px; }
+
+.lvdp-home-animation-raisin-11 { bottom:  160px; left: 30px; }
+.lvdp-home-animation-raisin-12 { bottom:  160px; left: 97px; }
+.lvdp-home-animation-raisin-13 { bottom:  160px; left: 164px; }
+
+.lvdp-home-animation-welcome-1, .lvdp-home-animation-welcome-2 {
+    width: 100%;
+    text-align:center;
+    margin-left: 100%;
+}
+
+.lvdp-home-animation-welcome-1 {
+    margin-top: 40px;
+    color: #be0185;
+}
+
+.lvdp-home-animation-welcome-2 {
+    margin-top: 10px;
+    padding: 5px;
+    background: #be0185;
+    width: 100%;
+    color: white;
+    font-weight: bold;
+}
+
+.lvdp-home-animation-close {
+    position: absolute;
+    top: 30px;
+    right: 25px;
 }
 
 .lvdp-main-pauline {
@@ -232,8 +313,24 @@ a {
     background: white;
     background-color: rgba(255,255,255,.8);
     text-shadow: #aaa 3px 3px 3px;
-    padding-bottom: 15px;
     position: relative;
+}
+
+.lvdp-content img {
+    margin-bottom: 15px;
+    max-width: 100%;
+}
+
+.lvdp-close {
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    z-index: 200;
+}
+
+
+img.lvdp-portrait {
+    margin-bottom: 0;
 }
 
 /*
@@ -284,22 +381,6 @@ a {
 
 .lvdp-content li p {
     margin: 0;
-}
-
-@media screen and (min-width: 992px) {
-    .lvdp-pauline {
-        height: 400px;
-    }
-
-    .lvdp-pauline img {
-        position: absolute;
-        right: 0px;
-        bottom: 0px;
-    }
-}
-
-.lvdp-pauline h1 {
-    z-index: 100;
 }
 
 .lvdp-cross {
@@ -560,6 +641,7 @@ a.lvdp-fill-div {
     width: 200px;
     padding: 10px;
     border-radius: 3px;
+    z-index: 200;
 }
 
 @media (min-width: 768px) {
@@ -609,7 +691,7 @@ a.lvdp-fill-div {
     width: 200px;
     padding: 10px;
     border-radius: 3px;
-    z-index: 100;
+    z-index: 200;
 }
 
 @media (min-width: 768px) {

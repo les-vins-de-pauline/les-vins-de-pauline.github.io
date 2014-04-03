@@ -32,10 +32,10 @@
             </a>
             &nbsp;
           </div>
-          <div class='col-sm-1 hidden-xs lvdp-nav-item'>
+          <div class='col-sm-1 visible-sm lvdp-nav-item'>
             &nbsp;
           </div>
-          <div class='col-sm-2 lvdp-nav-item lvdp-nav-active'>
+          <div class='col-md-3 col-sm-2 lvdp-nav-item lvdp-nav-active'>
             <a class='lvdp-fill-div' href='formations.html'></a>
             <a href='formations.html'>Formations</a>
           </div>
@@ -62,7 +62,7 @@
       <div class='row lvdp-vspace'></div>
       <div class='row'>
         <div class='col-sm-offset-2 col-sm-9'>
-          <div class='row'>
+          <div class='row lvdp-content-tab'>
             <div class='lvdp-tab pull-right'>
               <a class='lvdp-fill-div' href='formation-oenologie-references.html'></a>
               <a href='formation-oenologie-references.html'>
@@ -76,6 +76,9 @@
               </a>
             </div>
           </div>
+          <a class='lvdp-close' href='formations.html'>
+            <img src='img/close.png' />
+          </a>
           <div class='row lvdp-content' role='main'>
             <div class='col-sm-12 pull-left'>
               <h1>Pour le C.H.R.</h1>
@@ -307,105 +310,50 @@
     <script src='js/perfect-scrollbar-0.4.8.with-mousewheel.min.js'></script>
     <script type='text/javascript'>
       //<![CDATA[
-        //TODO refactor
-        var tilesMargin = $(window).height()-207-100-$('.lvdp-tile-container').height()-100-38;
-        $('.lvdp-tile-container').css('margin-top', tilesMargin/2).css('margin-bottom', tilesMargin/2);
-        $(window).resize(function() {
-            var tilesMargin = $(window).height()-207-100-$('.lvdp-tile-container').height()-100-38;
-            $('.lvdp-tile-container').css('margin-top', tilesMargin/2).css('margin-bottom', tilesMargin/2);
-        });
+        function setContentHeight() {
+            var windowHeight = $(window).height();
+            var headerHeight = 207;
+            var vspaceHeight = 100;
+            var tabHeight = $('.lvdp-content-tab').height();
+            var footerHeight = 38;
+            var availableHeight = windowHeight
+                -headerHeight
+                -vspaceHeight
+                -tabHeight
+                -vspaceHeight
+                -footerHeight;
+            var minContentHeight = 300;
+            availableHeight = Math.max(minContentHeight, availableHeight);
+            $('.lvdp-content').css('max-height', availableHeight).css('overflow', 'hidden').perfectScrollbar();
+            var actualHeight = $('.lvdp-content, .lvdp-tile-container').height();
+            var fillMargin = availableHeight - actualHeight;
+            $('.lvdp-vspace').css('margin-top', fillMargin/2);
+        }
+        $(window).resize(setContentHeight);
+        setContentHeight();
         
-        var contentHeight = $(window).height()-207-100-40-100-38;
-        contentHeight = Math.max(contentHeight, 300);
-        $('.lvdp-content').height(contentHeight).css('overflow', 'hidden').perfectScrollbar();
-        $(window).resize(function() {
-            var contentHeight = $(window).height()-207-100-40-100-38;
-            contentHeight = Math.max(contentHeight, 300);
-            $('.lvdp-content').height(contentHeight).perfectScrollbar('update');
-        });
+        function setUpHoverBox(element, box, direction, offset) {
+            $('.lvdp-'+box+element)
+                .mouseenter(function() {
+                    var boxOffset = $('.lvdp-'+box+'').offset();
+                    var parentOffset = $('.lvdp-content').parent().offset();
+                    var offscreenOffset = Math.max(0,
+                        boxOffset.top + 30 + $('.lvdp-'+box+'-box-expanded').height()
+                        - $(window).height());
+                    $('.lvdp-'+box+'-box-expanded')
+                        .appendTo($('.lvdp-content').parent())
+                        .css("top", boxOffset.top - parentOffset.top + 25 - offscreenOffset)
+                        .css(direction, boxOffset.left - parentOffset.left + offset);
         
-        $('.lvdp-pratique-box-expanded')
-            .mouseenter(function() {
-                $('.lvdp-pratique-box-expanded').appendTo($('.lvdp-content').parent());
-                $('.lvdp-pratique-box-expanded').css("top",
-                    0
-                    +$('.lvdp-pratique').offset().top
-                    -$('.lvdp-content').parent().offset().top
-                    +25
-                    );
-                $('.lvdp-pratique-box-expanded').css("right",
-                    0
-                    +$('.lvdp-pratique').offset().left
-                    -$('.lvdp-content').parent().offset().left
-                    +76
-                    );
-            })
-            .mouseleave(function() {
-                $('.lvdp-pratique-box-expanded').appendTo($('.lvdp-pratique-box'));
-            });
-        $('.lvdp-pratique')
-            .mouseenter(function() {
-                $('.lvdp-pratique-box-expanded').appendTo($('.lvdp-content').parent());
-                $('.lvdp-pratique-box-expanded').css("top",
-                    0
-                    +$('.lvdp-pratique').offset().top
-                    -$('.lvdp-content').parent().offset().top
-                    +25
-                    );
-                $('.lvdp-pratique-box-expanded').css("right",
-                    0
-                    +$('.lvdp-pratique').offset().left
-                    -$('.lvdp-content').parent().offset().left
-                    +76
-                    );
-                $('.lvdp-pratique-box-expanded').css("display", "none");
-                $('.lvdp-pratique-box-expanded').fadeIn();
-            })
-            .mouseleave(function() {
-                $('.lvdp-pratique-box-expanded').appendTo($('.lvdp-pratique-box'));
-            });
-        var onPlus = 0;
-        $('.lvdp-plus')
-            .mouseenter(function() {
-                $('.lvdp-plus-box-expanded').appendTo($('.lvdp-content').parent());
-                $('.lvdp-plus-box-expanded').css("top",
-                    0
-                    +$('.lvdp-plus').offset().top
-                    -$('.lvdp-content').parent().offset().top
-                    +25
-                    );
-                $('.lvdp-plus-box-expanded').css("left",
-                    0
-                    +$('.lvdp-plus').offset().left
-                    -$('.lvdp-content').parent().offset().left
-                    +28
-                    );
-                $('.lvdp-plus-box-expanded').css("display", "none");
-                $('.lvdp-plus-box-expanded').fadeIn();
-            })
-            .mouseleave(function() {
-                $('.lvdp-plus-box-expanded').appendTo($('.lvdp-plus-box'));
-            });
-        $('.lvdp-plus-box-expanded')
-            .mouseenter(function() {
-                $('.lvdp-plus-box-expanded').appendTo($('.lvdp-content').parent());
-                $('.lvdp-plus-box-expanded').css("top",
-                    0
-                    +$('.lvdp-plus').offset().top
-                    -$('.lvdp-content').parent().offset().top
-                    +25
-                    );
-                $('.lvdp-plus-box-expanded').css("left",
-                    0
-                    +$('.lvdp-plus').offset().left
-                    -$('.lvdp-content').parent().offset().left
-                    +28
-                    );
-            })
-            .mouseleave(function() {
-                $('.lvdp-plus-box-expanded').appendTo($('.lvdp-plus-box'));
-            })
-            ;
+                })
+                .mouseleave(function() {
+                    $('.lvdp-'+box+'-box-expanded').appendTo($('.lvdp-'+box+'-box'));
+                });
+        }
+        setUpHoverBox('', 'pratique', "right", 76);
+        setUpHoverBox('-box-expanded', 'pratique', "right", 76);
+        setUpHoverBox('', 'plus', "left", 28);
+        setUpHoverBox('-box-expanded', 'plus', "left", 28);
       //]]>
     </script>
   </body>
