@@ -68,20 +68,31 @@ a {
 
 .lvdp-tagline {
     position:relative;
-    height: 163px;
+    height: 90px;
     overflow: hidden;
 }
+
+@media screen and (min-width: 768px) {
+.lvdp-tagline {
+    height: 163px;
+}
+}
+
 
 .lvdp-tagline-front {
     position:absolute;
     top: 12px;
     left: 12px;
-    max-width: 80%;
+    max-width: 60%;
+    max-height: 70px;
 }
 
 @media screen and (min-width: 768px) {
 .lvdp-tagline-front {
     left: 50px;
+    height: 130px;
+    max-height: 130px;
+    max-width: 100%;
 }
 }
 
@@ -108,6 +119,25 @@ a {
     background-color: white;
 }
 
+.lvdp-nav-xs {
+    position: absolute;
+    top: 40px;
+    right: 0px;
+    width: 160px;
+}
+
+.lvdp-nav-xs:hover .lvdp-nav-xs-collapse {
+    display: block;
+}
+
+.lvdp-nav-xs-collapse {
+    position: absolute;
+    top: 50px;
+    right: 0px;
+    display: none;
+    box-shadow: #ccc 0px 0px 5px;
+}
+
 .lvdp-logo {
     padding: 12px;
 }
@@ -124,8 +154,10 @@ a {
 }
 
 .lvdp-nav-item {
+    position: relative;
     padding: 12px;
     text-align: center;
+
     /* http://www.colorzilla.com/gradient-editor/#f3f3f3+0,ffffff+50,f3f3f3+100;Custom */
     background: #f9f9f9; /* Old browsers */
     background: -moz-linear-gradient(top, #f3f3f3 0%, #ffffff 50%, #f3f3f3 100%); /* FF3.6+ */
@@ -236,37 +268,33 @@ a {
 
 .lvdp-main-pauline {
     background: url(../img/main-background-pauline.jpg) 0 0;
-    background-size: 100% auto;
-    background-size: cover;
-    margin-top: 207px;
 }
 
 .lvdp-main-formations {
     background: url(../img/main-background-formations.jpg) 0 0;
-    background-size: 100% auto;
-    background-size: cover;
-    margin-top: 207px;
 }
 
 .lvdp-main-animations {
     background: url(../img/main-background-animations.jpg) 0 0;
-    background-size: 100% auto;
-    background-size: cover;
-    margin-top: 207px;
 }
 
 .lvdp-main-ateliers {
     background: url(../img/main-background-ateliers.jpg) 0 0;
-    background-size: 100% auto;
-    background-size: cover;
-    margin-top: 207px;
 }
 
 .lvdp-main-ventes {
     background: url(../img/main-background-ventes.jpg) 0 0;
+}
+
+.lvdp-main {
     background-size: 100% auto;
     background-size: cover;
+}
+
+@media screen and (min-width: 768px) {
+.lvdp-main {
     margin-top: 207px;
+}
 }
 
 .lvdp-tab {
@@ -316,16 +344,26 @@ a {
     position: relative;
 }
 
+@media screen and (min-width: 768px) {
+.lvdp-content {
+    padding-right: 30px;
+}
+}
+
 .lvdp-content img {
     margin-bottom: 15px;
     max-width: 100%;
 }
 
+.lvdp-content-tab {
+    position: relative;
+}
+
 .lvdp-close {
     position: absolute;
-    top: 60px;
+    bottom: -40px;
     right: 20px;
-    z-index: 200;
+    z-index: 50;
 }
 
 
@@ -387,6 +425,17 @@ img.lvdp-portrait {
     position: absolute;
     left: -19px;
     top: 21px;
+}
+
+@media (min-width: 768px) {
+.lvdp-fadeout {
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    width: 100%;
+    height: 60px;
+    background: url(../img/fadeout.png);
+}
 }
 
 .lvdp-ribbon {
@@ -634,7 +683,7 @@ a.lvdp-fill-div {
 .lvdp-plus-box-expanded {
     position: absolute;
     top: -20px;
-    left: 28px;
+    left: -100px;
     background: #be0185;
     color: white;
     text-shadow: none;
@@ -684,7 +733,7 @@ a.lvdp-fill-div {
 .lvdp-pratique-box-expanded {
     position: absolute;
     top: -20px;
-    right: -25px;
+    right: -135px;
     background: #70a81d;
     color: white;
     text-shadow: none;

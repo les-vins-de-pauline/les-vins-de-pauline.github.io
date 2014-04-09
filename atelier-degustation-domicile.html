@@ -5,7 +5,7 @@
     <meta content='IE=edge' http-equiv='X-UA-Compatible' />
     <meta content='width=device-width, initial-scale=1' name='viewport' />
     <meta content='' name='description' />
-    <meta content='' name='author' />
+    <meta content='Pauline Vicard' name='author' />
     <link href='favicon.ico' rel='shortcut icon' />
     <link href='css/bootstrap.min.css' rel='stylesheet' />
     <link href='css/perfect-scrollbar-0.4.8.min.css' rel='stylesheet' />
@@ -20,13 +20,42 @@
     <header class='container lvdp-header'>
       <div class='lvdp-tagline'>
         <a href='/'>
-          <img alt='Les Vins de Pauline - Œnologie, pédagogie et bonnes bouteilles&amp;nbsp;!' class='lvdp-tagline-back' src='img/header-background.jpg' />
+          <img alt='Les Vins de Pauline - Œnologie, pédagogie et bonnes bouteilles&amp;nbsp;!' class='lvdp-tagline-back hidden-xs' src='img/header-background.jpg' />
           <img alt='Les Vins de Pauline - Œnologie, pédagogie et bonnes bouteilles&amp;nbsp;!' class='lvdp-tagline-front' src='img/tagline.png' />
         </a>
       </div>
-      <nav class='container lvdp-nav' role='navigation'>
+      <nav class='visible-xs lvdp-nav-xs'>
+        <img class='pull-right' src='img/logo.png' />
+        <div class='lvdp-nav-xs-collapse'>
+          <div class='lvdp-nav-item'>
+            <a class='lvdp-fill-div' href='pauline.html'></a>
+            <a href='pauline.html'>Accueil</a>
+          </div>
+          <div class='lvdp-nav-item'>
+            <a class='lvdp-fill-div' href='formations.html'></a>
+            <a href='formations.html'>Formations</a>
+          </div>
+          <div class='lvdp-nav-item'>
+            <a class='lvdp-fill-div' href='animations.html'></a>
+            <a href='animations.html'>Animations</a>
+          </div>
+          <div class='lvdp-nav-item lvdp-nav-active'>
+            <a class='lvdp-fill-div' href='ateliers.html'></a>
+            <a href='ateliers.html'>Ateliers</a>
+          </div>
+          <div class='lvdp-nav-item'>
+            <a class='lvdp-fill-div' href='ventes.html'></a>
+            <a href='ventes.html'>Ventes</a>
+          </div>
+          <div class='lvdp-nav-item'>
+            <a class='lvdp-fill-div' href='http://blog.lesvinsdepauline.fr' target='_blank'></a>
+            <a href='http://blog.lesvinsdepauline.fr' target='_blank'>Blog</a>
+          </div>
+        </div>
+      </nav>
+      <nav class='hidden-xs container lvdp-nav' role='navigation'>
         <div class='row'>
-          <div class='col-xs-1 hidden-xs lvdp-logo'>
+          <div class='col-xs-1 lvdp-logo'>
             <a href='pauline.html'>
               <img class='lvdp-logo-offset' src='img/logo.png' />
             </a>
@@ -35,11 +64,11 @@
           <div class='col-sm-1 visible-sm lvdp-nav-item'>
             &nbsp;
           </div>
-          <div class='col-sm-3 lvdp-nav-item'>
+          <div class='col-md-3 col-sm-2 lvdp-nav-item'>
             <a class='lvdp-fill-div' href='formations.html'></a>
             <a href='formations.html'>Formations</a>
           </div>
-          <div class='col-sm-2 lvdp-nav-item'>
+          <div class='col-md-2 col-sm-2 lvdp-nav-item'>
             <a class='lvdp-fill-div' href='animations.html'></a>
             <a href='animations.html'>Animations</a>
           </div>
@@ -47,7 +76,7 @@
             <a class='lvdp-fill-div' href='ateliers.html'></a>
             <a href='ateliers.html'>Ateliers</a>
           </div>
-          <div class='col-sm-2 lvdp-nav-item'>
+          <div class='col-md-2 col-sm-2 lvdp-nav-item'>
             <a class='lvdp-fill-div' href='ventes.html'></a>
             <a href='ventes.html'>Ventes</a>
           </div>
@@ -58,7 +87,7 @@
         </div>
       </nav>
     </header>
-    <div class='container lvdp-main-ateliers'>
+    <div class='container lvdp-main lvdp-main-ateliers'>
       <div class='row lvdp-vspace'></div>
       <div class='row'>
         <div class='col-sm-offset-2 col-sm-9'>
@@ -75,10 +104,10 @@
                 Une philosophie
               </a>
             </div>
+            <a class='lvdp-close' href='ateliers.html'>
+              <img src='img/close.png' />
+            </a>
           </div>
-          <a class='lvdp-close' href='ateliers.html'>
-            <img src='img/close.png' />
-          </a>
           <div class='row lvdp-content' role='main'>
             <div class='col-sm-12 pull-left'>
               <h1>Sur mesure</h1>
@@ -87,9 +116,12 @@
                 <a href='mailto:pauline@lesvinsdepauline.fr?subject=Atelier%20sur%20mesure'>Contactez-nous&nbsp;!</a>
               </p>
               <img class='pull-right' src='img/page-icon-sur-mesure.png' />
+              <div class='clearfix'></div>
+              <div class='lvdp-vspace-small'></div>
             </div>
           </div>
           <img class='hidden-xs lvdp-cross' src='img/cross.png' />
+          <div class='lvdp-fadeout'></div>
           <img class='lvdp-ribbon' src='img/ribbon.png' />
         </div>
       </div>
@@ -105,9 +137,6 @@
             </a>
             <a href='#credits'>
               <img src='img/icon-like.png' />
-            </a>
-            <a href='#legal'>
-              <img src='img/icon-legal.png' />
             </a>
             <a href='#sitemap'>
               <img src='img/icon-sitemap.png' />
@@ -144,22 +173,24 @@
           </a>
           <div class='lvdp-footer-text'>
             <h2>Merci !</h2>
-            <p>consentium aribusciunti sum quos sunt enda prerfer natestrument eume qui a possitas eos eatur autem et ut quatque pro et lab inus.</p>
-            <p>At et fuga. Ut aspis qui cus unto volorep editatur aut maio ommolup icipsam.</p>
-          </div>
-        </div>
-      </div>
-      <div class='lvdp-footer-divider'></div>
-      <div class='row'>
-        <div class='col-sm-12'>
-          <a name='legal'>
-            <img class='lvdp-footer-icon' src='img/icon-legal-inv.png' />
-          </a>
-          <div class='lvdp-footer-text'>
-            <h2>Mentions légales</h2>
-            <p>Apit, ut iunt parchilis nectiatis eumquam quia essit doluptati tet quam non con rehenis doluptaquam, verum re mo quam, si dolut as reperupta ne ra vidicat ibusdaectur a si accuptate magnam, ut assimi, te intur? Sunt ommo videstota aspe es eture assimol uptatur alignimin con nimet mi, optiam sim nihilluptae peritas denditiae doluptatis dollace sendandandae soloriam qui consentium aribusciunti sum quos sunt enda prerfer natestrument eume qui a possitas eos eatur autem et ut quatque pro et lab inus.</p>
-            <p>At et fuga. Ut aspis qui cus unto volorep editatur aut maio ommolup icipsam.</p>
-            <p>Apit, ut iunt parchilis nectiatis eumquam quia essit doluptati tet quam non con rehenis doluptaquam, verum re mo quam, si dolut as reperupta ne ra vidicat ibusdaectur a si accuptate magnam, ut assimi, te intur? Sunt ommo videstota aspe es eture assimol uptatur alignimin con nimet mi, optiam sim nihilluptae peritas denditiae doluptatis dollace At et sendandandae soloriam qui.</p>
+            <p>
+              Crédits photographiques&nbsp;:
+              <a href='http://www.takeasip.net' target='_blank'>
+                take a sip
+              </a>
+            </p>
+            <p>
+              Design&nbsp;:
+              <a href='http://imagesetlegendes.com' target='_blank'>
+                images &amp; légendes
+              </a>
+            </p>
+            <p>
+              Réalisation&nbsp;:
+              <a href='http://quentin.bonnard.eu' target='_blank'>
+                Quentin Bonnard
+              </a>
+            </p>
           </div>
         </div>
       </div>
@@ -167,7 +198,7 @@
       <div class='row'>
         <div class='col-sm-12'>
           <a name='sitemap'>
-            <img class='lvdp-footer-icon' src='img/icon-legal-inv.png' />
+            <img class='lvdp-footer-icon' src='img/icon-sitemap-inv.png' />
           </a>
           <div class='lvdp-footer-text'>
             <h2>Plan du site</h2>
@@ -279,43 +310,48 @@
     <script type='text/javascript'>
       //<![CDATA[
         function setContentHeight() {
-            var windowHeight = $(window).height();
-            var headerHeight = 207;
-            var vspaceHeight = 100;
-            var tabHeight = $('.lvdp-content-tab').height();
-            var footerHeight = 38;
-            var availableHeight = windowHeight
-                -headerHeight
-                -vspaceHeight
-                -tabHeight
-                -vspaceHeight
-                -footerHeight;
-            var minContentHeight = 300;
-            availableHeight = Math.max(minContentHeight, availableHeight);
-            $('.lvdp-content').css('max-height', availableHeight).css('overflow', 'hidden').perfectScrollbar();
-            var actualHeight = $('.lvdp-content, .lvdp-tile-container').height();
-            var fillMargin = availableHeight - actualHeight;
-            $('.lvdp-vspace').css('margin-top', fillMargin/2);
+            if ($(window).width() >= 768) {
+                var windowHeight = $(window).height();
+                var headerHeight = 207;
+                var vspaceHeight = 100;
+                var tabHeight = $('.lvdp-content-tab').height();
+                var footerHeight = 38;
+                var availableHeight = windowHeight
+                    -headerHeight
+                    -vspaceHeight
+                    -tabHeight
+                    -vspaceHeight
+                    -footerHeight;
+                var minContentHeight = 300;
+                availableHeight = Math.max(minContentHeight, availableHeight);
+                $('.lvdp-content').css('max-height', availableHeight).css('overflow', 'hidden').perfectScrollbar();
+                var actualHeight = $('.lvdp-content, .lvdp-tile-container').height();
+                var fillMargin = availableHeight - actualHeight;
+                $('.lvdp-vspace').css('margin-top', fillMargin/2);
+            }
         }
         $(window).resize(setContentHeight);
-        setContentHeight();
+        $().ready(setContentHeight());
         
         function setUpHoverBox(element, box, direction, offset) {
             $('.lvdp-'+box+element)
                 .mouseenter(function() {
-                    var boxOffset = $('.lvdp-'+box+'').offset();
-                    var parentOffset = $('.lvdp-content').parent().offset();
-                    var offscreenOffset = Math.max(0,
-                        boxOffset.top + 30 + $('.lvdp-'+box+'-box-expanded').height()
-                        - $(window).height());
-                    $('.lvdp-'+box+'-box-expanded')
-                        .appendTo($('.lvdp-content').parent())
-                        .css("top", boxOffset.top - parentOffset.top + 25 - offscreenOffset)
-                        .css(direction, boxOffset.left - parentOffset.left + offset);
-        
+                    if ($(window).width() >= 768) {
+                        var boxOffset = $('.lvdp-'+box+'').offset();
+                        var parentOffset = $('.lvdp-content').parent().offset();
+                        var offscreenOffset = Math.max(0,
+                            boxOffset.top + 30 + $('.lvdp-'+box+'-box-expanded').height()
+                            - $(window).height());
+                        $('.lvdp-'+box+'-box-expanded')
+                            .appendTo($('.lvdp-content').parent())
+                            .css("top", boxOffset.top - parentOffset.top + 25 - offscreenOffset)
+                            .css(direction, boxOffset.left - parentOffset.left + offset);
+                    }
                 })
                 .mouseleave(function() {
-                    $('.lvdp-'+box+'-box-expanded').appendTo($('.lvdp-'+box+'-box'));
+                    if ($(window).width() >= 768) {
+                        $('.lvdp-'+box+'-box-expanded').appendTo($('.lvdp-'+box+'-box'));
+                    }
                 });
         }
         setUpHoverBox('', 'pratique', "right", 76);
